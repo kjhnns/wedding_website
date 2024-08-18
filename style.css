@@ -27,7 +27,7 @@ h1,h2,h3,h4 {
 .title {
     display:flex;
     width:100%;
-    background-color: #f9f9f9; /* Background color of the section */
+
     justify-content: center;
 }
 

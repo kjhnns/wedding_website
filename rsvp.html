@@ -7,9 +7,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./milligram.min.css" /> 
 	<link rel="stylesheet" href="./style.css" /> 
 	<link rel="stylesheet" href="./menu.css" /> 
-	<link rel="stylesheet" href="./travel_tips.css" /> 
+	<link rel="stylesheet" href="./rsvp.css" /> 
 
 
 </head>
@@ -17,103 +18,160 @@
 
 
 	<main>
-		<div class='title'><h1>RSVP</h1></div>
-
-    <form id="rsvp-form">
-        <div id="attendee-fields">
-            <!-- Attendee fields will be added here dynamically -->
-        </div>
-        <button type="button" onclick="addAttendee()">Add Attendee</button>
-        <button type="submit">Submit RSVP</button>
-    </form>
-
-
- <script>
-        let attendeeCount = 0;
-
-        function addAttendee() {
-            attendeeCount++;
-            const attendeeFields = document.getElementById('attendee-fields');
-
-            const attendeeDiv = document.createElement('div');
-            attendeeDiv.setAttribute('id', 'attendee-' + attendeeCount);
-            attendeeDiv.innerHTML = `
-                <h3 class="attendee-counter">Attendee ${attendeeCount}</h3>
-                <label for="first-name-${attendeeCount}">First Name:</label>
-                <input type="text" name="first-name-${attendeeCount}" required>
-                <label for="last-name-${attendeeCount}">Last Name:</label>
-                <input type="text" name="last-name-${attendeeCount}" required>
-                <label for="email-${attendeeCount}">Email:</label>
-                <input type="email" name="email-${attendeeCount}" required>
-                <p>Select Event:</p>
-                <label>
-                    <input type="radio" name="event-${attendeeCount}" value="ceremony" required> Ceremony
-                </label>
-                <label>
-                    <input type="radio" name="event-${attendeeCount}" value="reception" required> Reception
-                </label>
-                <label>
-                    <input type="radio" name="event-${attendeeCount}" value="both" required> Both
-                </label>
-                <button type="button" onclick="removeAttendee(${attendeeCount})">Remove</button>
-                <hr>
-            `;
-            attendeeFields.appendChild(attendeeDiv);
-        }
-
-        function removeAttendee(id) {
-            const attendeeDiv = document.getElementById('attendee-' + id);
-            attendeeDiv.remove();
-            updateAttendeeCounters();
-            attendeeCount--;
-        }
-
-        function updateAttendeeCounters() {
-            const counters = document.querySelectorAll('.attendee-counter');
-            counters.forEach((counter, index) => {
-                counter.textContent = `Attendee ${index + 1}`;
-            });
-        }
-
-        document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const formData = new FormData(this);
-
-            fetch('/submit-rsvp', {
-                method: 'POST',
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('RSVP submitted successfully!');
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        });
-    </script>
-
-
-
-			<div class="menu__section">
-				<div class="menu__image">
-					<img src="./public/sand.jpeg" alt="Descriptive Alt Text">
-				</div>
-				<div class="menu__text">
-					<ul class="menu-list"><li>
-						<a href="./index.html">Home</a></li>   
-						<li><a href="#">Agenda</a></li>    
-						<li><a href="./travel_tips.html">Travel tips</a></li>    
-						<li><a href="./accomodation.html">Acommodation</a></li>        
-						<li><a href="#">Dress Code</a></li>    
-						<li><a href="#">Gifts</a></li>    
-						<li><a href="./rsvp.html">RSVP</a></li>    
-					</ul>
+		<div class="rsvp-section">
+			<div class='title'><h1>RSVP</h1></div>
+			<div class="form-section">
+				<p class="instructions">Please submit the form for everyone attending with you. Select whether each person will attend the pre-wedding party. The email address provided will be used to send updates about the wedding and a confirmation email for your RSVP. You may use the same email for all attendees.
+				If you need to update your RSVP, you can resubmit the form or reply to the confirmation email; both methods will be acknowledged. To check if you've already responded, please refer to your email. </p>
+				<form id="rsvp-form">
+					<div id="attendee-fields">
+						<!-- Attendee fields will be added here dynamically -->
+					</div>
+					<button type="button" class="button button-outline" onclick="addAttendee()">Add Attendee</button>
+					<button type="submit" class="button button-outline">Submit RSVP</button>
+				</form>
+				<div id="confirmation-message" style="display: none; margin-top: 20px;">
+					<p>Thank you! Your RSVP has been submitted successfully.</p>
 				</div>
 			</div>
-		</main>
+		</div>
+
+		<script>
+			let attendeeCount = 0;
+
+			function addAttendee() {
+				const attendeeFields = document.getElementById('attendee-fields');
+
+				const attendeeDiv = document.createElement('div');
+				attendeeDiv.setAttribute('id', 'attendee-' + attendeeCount);
+				attendeeDiv.innerHTML = `
+				<div class="attendee_container">
+				<div class="attendee__title">
+				<h3 class="attendee-counter">Attendee ${attendeeCount + 1}</h3>
+				<button type="button" class="removeAttendee button button-outline" onclick="removeAttendee(${attendeeCount})">Remove</button>
+				</div>
+				<div class="attendee__group">
+				<div class="attendee__variable">
+				<label for="first-name-${attendeeCount}">First Name:</label>
+				<input type="text" name="attendees[${attendeeCount}][firstName]" required>
+				</div>
+				<div class="attendee__variable">
+				<label for="last-name-${attendeeCount}">Last Name:</label>
+				<input type="text" name="attendees[${attendeeCount}][lastName]" required>
+				</div>
+				<div class="attendee__variable">
+				<label for="email-${attendeeCount}">Email:</label>
+				<input type="email" name="attendees[${attendeeCount}][email]" required>
+				</div>
+				<div class="attendee__variable select">
+				<p>Select Event:</p>
+				<label>
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="ceremony" required> Ceremony
+				</label>
+				<label>
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="reception" required> Reception
+				</label>
+				<label>
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="both" required> Both
+				</label>
+				</div>
+				</div>
+				</div>
+				`;
+				attendeeFields.appendChild(attendeeDiv);
+				attendeeCount++;
+			}
+
+			function removeAttendee(id) {
+				const attendeeDiv = document.getElementById('attendee-' + id);
+				attendeeDiv.remove();
+				updateAttendeeCounters();
+				attendeeCount--;
+			}
+
+			function updateAttendeeCounters() {
+				const counters = document.querySelectorAll('.attendee-counter');
+				counters.forEach((counter, index) => {
+					counter.textContent = `Attendee ${index + 1}`;
+				});
+
+        // Update the input names to keep them sequential
+				const inputs = document.querySelectorAll('#attendee-fields input, #attendee-fields label');
+				inputs.forEach(input => {
+					const name = input.getAttribute('name');
+					if (name) {
+						const newName = name.replace(/\[.*?\]/, `[${Array.prototype.indexOf.call(input.closest('.attendee_container').parentElement.children, input.closest('.attendee_container'))}]`);
+						input.setAttribute('name', newName);
+					}
+				});
+			}
+
+			document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+        const attendees = [];
+
+        // Construct the JSON object
+        for (let i = 0; i < attendeeCount; i++) {
+            const attendee = {
+                firstName: formData.get(`attendees[${i}][firstName]`),
+                lastName: formData.get(`attendees[${i}][lastName]`),
+                email: formData.get(`attendees[${i}][email]`),
+                event: formData.get(`attendees[${i}][event]`)
+            };
+            if (attendee.firstName && attendee.lastName && attendee.email && attendee.event) {
+                attendees.push(attendee);
+            }
+        }
+
+        const jsonData = JSON.stringify({ attendees });
+
+        fetch('https://hook.eu1.make.com/vpg4ialld8bw9jyrp54wfnvclwdo8v2a', {
+            method: 'POST',
+            body: jsonData,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Show confirmation message
+            document.getElementById('confirmation-message').style.display = 'block';
+            // Optionally, you could also clear the form or hide it after submission
+            document.getElementById('rsvp-form').reset();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    // Initial attendee added on page load
+			addAttendee();
+		</script>
 
 
-	</body>
-	</html>
+
+
+
+		<div class="menu__section">
+			<div class="menu__image">
+				<img src="./public/sand.jpeg" alt="Descriptive Alt Text">
+			</div>
+			<div class="menu__text">
+				<ul class="menu-list"><li>
+					<a href="./index.html">Home</a></li>   
+					<li><a href="#">Agenda</a></li>    
+					<li><a href="./travel_tips.html">Travel tips</a></li>    
+					<li><a href="./accomodation.html">Acommodation</a></li>        
+					<li><a href="#">Dress Code</a></li>    
+					<li><a href="#">Gifts</a></li>    
+					<li><a href="./rsvp.html">RSVP</a></li>    
+				</ul>
+			</div>
+		</div>
+	</main>
+
+
+</body>
+</html>
