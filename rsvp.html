@@ -27,8 +27,10 @@
 					<div id="attendee-fields">
 						<!-- Attendee fields will be added here dynamically -->
 					</div>
-					<button type="button" class="outlined-button " onclick="addAttendee()">Add Attendee</button>
-					<button type="submit" class="outlined-button">Submit RSVP</button>
+					<div class="form-controls">
+						<button type="button" class="button button-clear" onclick="addAttendee()">Add Attendee</button>
+						<button type="submit" class="button">Submit RSVP</button>
+					</div>
 				</form>
 				<div id="confirmation-message" style="display: none; margin-top: 20px;">
 					<p>Thank you! Your RSVP has been submitted successfully.</p>
@@ -48,7 +50,7 @@
 				<div class="attendee_container">
 				<div class="attendee__title">
 				<h3 class="attendee-counter">Attendee ${attendeeCount + 1}</h3>
-				<button type="button" class="removeAttendee outlined-button" onclick="removeAttendee(${attendeeCount})">Remove</button>
+				<button type="button" class="removeAttendee button button-clear" onclick="removeAttendee(${attendeeCount})">Remove</button>
 				</div>
 				<div class="attendee__group">
 				<div class="attendee__variable">
