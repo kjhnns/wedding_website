@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>May 10th 2025 - Camila & Johannes</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css" /> 
+	<link rel="stylesheet" href="./menu.css" /> 
+	<link rel="stylesheet" href="./travel_tips.css" /> 
+
+
+</head>
+<body>
+
+
+	<main>
+		<div class='title'><h1>RSVP</h1></div>
+
+    <form id="rsvp-form">
+        <div id="attendee-fields">
+            <!-- Attendee fields will be added here dynamically -->
+        </div>
+        <button type="button" onclick="addAttendee()">Add Attendee</button>
+        <button type="submit">Submit RSVP</button>
+    </form>
+
+
+ <script>
+        let attendeeCount = 0;
+
+        function addAttendee() {
+            attendeeCount++;
+            const attendeeFields = document.getElementById('attendee-fields');
+
+            const attendeeDiv = document.createElement('div');
+            attendeeDiv.setAttribute('id', 'attendee-' + attendeeCount);
+            attendeeDiv.innerHTML = `
+                <h3 class="attendee-counter">Attendee ${attendeeCount}</h3>
+                <label for="first-name-${attendeeCount}">First Name:</label>
+                <input type="text" name="first-name-${attendeeCount}" required>
+                <label for="last-name-${attendeeCount}">Last Name:</label>
+                <input type="text" name="last-name-${attendeeCount}" required>
+                <label for="email-${attendeeCount}">Email:</label>
+                <input type="email" name="email-${attendeeCount}" required>
+                <p>Select Event:</p>
+                <label>
+                    <input type="radio" name="event-${attendeeCount}" value="ceremony" required> Ceremony
+                </label>
+                <label>
+                    <input type="radio" name="event-${attendeeCount}" value="reception" required> Reception
+                </label>
+                <label>
+                    <input type="radio" name="event-${attendeeCount}" value="both" required> Both
+                </label>
+                <button type="button" onclick="removeAttendee(${attendeeCount})">Remove</button>
+                <hr>
+            `;
+            attendeeFields.appendChild(attendeeDiv);
+        }
+
+        function removeAttendee(id) {
+            const attendeeDiv = document.getElementById('attendee-' + id);
+            attendeeDiv.remove();
+            updateAttendeeCounters();
+            attendeeCount--;
+        }
+
+        function updateAttendeeCounters() {
+            const counters = document.querySelectorAll('.attendee-counter');
+            counters.forEach((counter, index) => {
+                counter.textContent = `Attendee ${index + 1}`;
+            });
+        }
+
+        document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('/submit-rsvp', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('RSVP submitted successfully!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+
+
+			<div class="menu__section">
+				<div class="menu__image">
+					<img src="./public/sand.jpeg" alt="Descriptive Alt Text">
+				</div>
+				<div class="menu__text">
+					<ul class="menu-list"><li>
+						<a href="./index.html">Home</a></li>   
+						<li><a href="#">Agenda</a></li>    
+						<li><a href="./travel_tips.html">Travel tips</a></li>    
+						<li><a href="./accomodation.html">Acommodation</a></li>        
+						<li><a href="#">Dress Code</a></li>    
+						<li><a href="#">Gifts</a></li>    
+						<li><a href="./rsvp.html">RSVP</a></li>    
+					</ul>
+				</div>
+			</div>
+		</main>
+
+
+	</body>
+	</html>

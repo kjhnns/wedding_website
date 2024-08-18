@@ -1,15 +1,4 @@
 
-.title {
-    display:flex;
-    width:100%;
-    background-color: #f9f9f9; /* Background color of the section */
-    justify-content: center;
-}
-
-.title h1 {
-    font-size: 3rem;
-    padding-top: 2rem;
-}
 
 
 .three-column-section {
@@ -48,9 +37,7 @@
     margin-bottom: 15px;
 }
 
-.grid-item .CTA {
-    font-style: italic;
-}
+
 
 .grid-item a {
     text-decoration: none;
