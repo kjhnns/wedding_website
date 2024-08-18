@@ -34,7 +34,7 @@ video {
     top: 0;
     left: 0;
     z-index: 1;
-    filter: blur(4px); 
+    filter: blur(2px); 
 
 }
 
@@ -46,7 +46,7 @@ video {
     height: 100%;
     background: url('./public/firstframe.jpg') no-repeat center center;
     background-size: cover;
-    filter: blur(4px);
+    filter: blur(2px);
     z-index: 2;
     transition: opacity 0.5s ease-out;
 
@@ -100,15 +100,13 @@ text-align: center;
 
 
 .note {position: absolute;
-    bottom: 30px;
+    bottom: 10vh;
     z-index: 3; /* Ensure it's on top of the overlay and video */
     color: white;
     font-size: .8rem;
     text-align: center;
     font-style: italic;
     margin-bottom: 20px;
-/*    padding: 10px;*/
-/*    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */*/
 width: 100%;
 box-sizing: border-box;
 }
@@ -120,6 +118,10 @@ box-sizing: border-box;
         font-size: 2.5rem;
     }
 
+video, .placeholder  {
+
+    filter: blur(1px); 
+}
 
     .foreground-text  {
     font-size: 1.2rem;
