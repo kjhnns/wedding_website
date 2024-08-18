@@ -65,6 +65,9 @@ h3 {
 	width: 66%;
 }
 
+
+
+
 .attendee__variable.select p {
 	width: 33%;
 	text-align: left;
@@ -83,13 +86,14 @@ h3 {
 	margin: 20px;
 }
 
+	.attendee__variable.select {
+		flex-direction: column;
+	}
 
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-	.attendee__variable.select {
-		flex-direction: column;
-	}
+
 
 	.attendee_container {
 		margin: 30px 0;
