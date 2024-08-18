@@ -1,0 +1,87 @@
+
+.title {
+    display:flex;
+    width:100%;
+    background-color: #f9f9f9; /* Background color of the section */
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+
+.three-column-section {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 5%; /* Space between the grid items */
+    padding: 5%;
+    background-color: #f9f9f9; /* Background color of the section */
+}
+
+.grid-item {
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for the images */
+    margin-bottom: 15px;
+}
+
+.grid-item h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.grid-item p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.grid-item .CTA {
+    font-style: italic;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.grid-item ul li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .three-column-section {
+        grid-template-columns: 1fr 1fr; /* Stack the grid items */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .three-column-section {
+        grid-template-columns: 1fr; /* Stack the grid items */
+        height: auto;
+        gap:0;
+        padding:0;
+    }
+
+    .grid-item {
+        margin-bottom: 20px; /* Add space between stacked items */
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,118 @@
+
+
+
+.foreground-text h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+.main-element {
+    background: white; /* Background color of the centered element */
+    padding: 20px; /* Adjust padding as needed */
+/*    border-radius: 8px; /* Optional: rounded corners */*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for a nice effect */*/
+max-width: 90%; /* Ensure it fits within smaller viewports */
+width: 400px; /* Fixed width, adjust as needed */
+text-align: center; /* Optional: center text inside */
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.video-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: blur(7px); 
+
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./public/firstframe.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: 2;
+    transition: opacity 0.5s ease-out;
+
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.foreground-text {
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-size: 1.2rem;
+/*    background: rgba(0, 0, 0, 0.5);*/
+font-weight: 200;
+text-align: center;
+/*    padding-bottom: 50px;*/
+}
+
+.outlined-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFF; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    font-weight: normal;
+    border: 1px solid #FFF; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.outlined-button:hover {
+    background-color: #FFF; /* Background on hover */
+    color: #000; /* Text color on hover */
+}
+
+
+.note {position: absolute;
+    bottom: 0;
+    z-index: 3; /* Ensure it's on top of the overlay and video */
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+/*    padding: 10px;*/
+/*    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */*/
+width: 100%;
+box-sizing: border-box;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.foreground-text h1 {
+        font-size: 2.5rem;
+}
+}
+

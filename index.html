@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="menu.css" /> 
+    <link rel="stylesheet" href="index.css" /> 
+
+    <script>
+        function hidePlaceholder() {
+            const placeholder = document.getElementById('placeholder');
+            placeholder.classList.add('hidden');
+        }
+    </script>
+
+</head>
+<body>
+
+
+    <main>
+
+
+        <div class="video-container">
+            <video autoplay muted playsinline loop onloadeddata="hidePlaceholder()">
+                <source src="./public/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="placeholder" id="placeholder"></div>
+                <div class="foreground-text">
+
+                    <h1>Camila & Johannes</h1>
+                    <p>10 May 2025</p>
+                    <p>Angra dos Reis, Brazil</p>
+                    <a href="#test" class="outlined-button">RSVP</a>
+
+                </div>
+
+                <div class="note">
+                    scroll down for more information
+                </div>
+            </div>
+
+
+
+            <div class="info-section">
+                <div class="info-image">
+                    <img src="./public/sand.jpeg" alt="Descriptive Alt Text">
+                </div>
+                <div class="info-text">
+
+                    <ul class="menu-list">
+                        <li><a href="./index.html">Home</a></li>    
+                        <li><a href="#">Agenda</a></li>    
+                        <li><a href="#">Travel tips</a></li>    
+                        <li><a href="./accomodation.html">Acommodation</a></li>           
+                        <li><a href="#">Dress Code</a></li>    
+                        <li><a href="#">Gifts</a></li>    
+
+                        <li><a href="#">RSVP</a></li>    
+                    </ul>
+
+
+                </div>
+            </div>
+
+
+        </main>
+
+
+
+
+<!-- 
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+-->
+</body>
+</html>
