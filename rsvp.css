@@ -7,6 +7,11 @@
 padding: 5% 0;
 }
 
+
+.attendee-wrapper:first-child .removeAttendee  {
+	display: none;
+}
+
 h3 {
 	font-size: 1.8rem;
 }
