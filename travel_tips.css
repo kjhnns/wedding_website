@@ -1,4 +1,4 @@
-main {
+div.top-section {
 
     display: grid;
     place-items: center;
@@ -15,7 +15,7 @@ main {
 
 }
 
-main::before {
+div.top-section::before {
     content: "";
     position: absolute;
     top: 0;
