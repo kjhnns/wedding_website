@@ -17,7 +17,7 @@ background:    none;
     align-items: center;    
 
     margin-top: 5px;
-    text-decoration: underline;
+/*    text-decoration: underline;*/
     color: black;
 }
 
@@ -29,12 +29,12 @@ background:    none;
     margin-left: 5px;
     flex-shrink: 0;    
 
-    text-decoration: none !important;
+/*    text-decoration: none !important;*/
 }
 
 .collapsible.active:after {
     content: "\2212"; /* Unicode character for "minus" sign (−) */
-    text-decoration: none !important;
+/*    text-decoration: none !important;*/
 }
 
 .content {
