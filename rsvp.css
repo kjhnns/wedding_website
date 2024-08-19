@@ -4,8 +4,40 @@
 /*	height: 40vh;*/
 /*background: #0E2B16;*/
 /*color:white;*/
-padding: 5% 0;
 }
+
+div.rsvp-section {
+padding: 5% 0;
+
+    display: grid;
+    place-items: center;
+/*    height: 100vh;*/
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensure this is above the pseudo-element */
+
+  /*  background-image: url('public/pattern_palms.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Set the desired opacity */
+
+}
+
+div.rsvp-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./public/pattern_coco.png');
+    opacity: 0.08; /* Set the desired opacity */
+    z-index: -1; /* Place it behind the content */
+    pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+}
+
+
 
 
 .attendee-wrapper:first-child .removeAttendee  {
@@ -212,8 +244,8 @@ label input[type="radio"] + span {
 
 .button:hover {
 /*    background-color: #000;  Background on hover */
-    border: 1px solid #888; /* Border color */
-    color: #888; /* Text color on hover */
+    border: 1px solid #555; /* Border color */
+    color: #555; /* Text color on hover */
 }
 
 
