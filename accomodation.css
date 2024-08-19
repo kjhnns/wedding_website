@@ -71,7 +71,7 @@ div.accomodation-section::before {
 
 
 .grid-item a {
-    text-decoration: none;
+/*    text-decoration: none;*/
     color: #000;
     font-weight: bold;
 }

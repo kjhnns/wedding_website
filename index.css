@@ -1,5 +1,7 @@
 
 
+
+
 div.quote  {
     margin: 5% 20%;
     font-size: 1.5rem;
@@ -149,6 +151,8 @@ text-align: center;
 .foreground-text a {
     color: white;
     text-decoration: none;
+     font-family: "Montserrat", sans-serif;
+        font-style: normal;
 }
 
 .outlined-button {
