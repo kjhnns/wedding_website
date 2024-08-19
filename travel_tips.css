@@ -15,8 +15,9 @@ background:    none;
     display: flex;               /* Use flexbox to keep items on one line */
     justify-content: space-between; /* Space out the text and icon */
     align-items: center;    
-    
+
     margin-top: 5px;
+    text-decoration: underline;
 }
 
 .collapsible:after {
