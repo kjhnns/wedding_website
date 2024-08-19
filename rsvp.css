@@ -28,9 +28,26 @@ h3 {
 	margin: 5%;
 }
 
+#confirmation-message {
+	display: none; 
+	background: goldenrod;
+	padding: 3rem;
+	font-family: 'Cardo', serif;
+	font-size: 1.5rem;
+	color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+    transition: opacity 1s ease-in;
+}
+
+
 .instructions {
 	margin: 5%;
 	line-height: 2rem;
+
 }
 
 .attendee__group {
