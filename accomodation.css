@@ -1,5 +1,36 @@
 
 
+div.accomodation-section {
+
+    display: grid;
+    place-items: center;
+/*    height: 100vh;*/
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensure this is above the pseudo-element */
+
+  /*  background-image: url('public/pattern_palms.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Set the desired opacity */
+
+}
+
+div.accomodation-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./public/pattern_pineapple.png');
+    opacity: 0.1; /* Set the desired opacity */
+    z-index: -1; /* Place it behind the content */
+    pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+}
+
+
 
 .three-column-section {
     display: grid;
@@ -7,7 +38,7 @@
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     gap: 5%; /* Space between the grid items */
     padding: 5%;
-    background-color: #f9f9f9; /* Background color of the section */
+/*    background-color: #f9f9f9; /* Background color of the section */*/
 }
 
 .grid-item {
