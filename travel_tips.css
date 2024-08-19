@@ -22,8 +22,8 @@ div.top-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./public/pattern_palms.png');
-    opacity: 0.05; /* Set the desired opacity */
+    background-image: url('./public/pattern_palm2.jpg');
+    opacity: 0.1; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */
 }
