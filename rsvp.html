@@ -69,16 +69,20 @@
 				<input type="email" name="attendees[${attendeeCount}][email]" required>
 				</div>
 				<div class="attendee__variable select">
-				<p>Select Event:</p>
+				<p style="margin-bottom: 10px">Select Event:</p>
 				<label>
-				<input type="radio" name="attendees[${attendeeCount}][event]" value="prewedding" required> Pre-Wedding Party (9th of May)
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="pre wedding" required> Only Pre-Wedding Party (9th of May)
 				</label>
 				<label>
-				<input type="radio" name="attendees[${attendeeCount}][event]" value="wedding" required> Wedding (10th of May)
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="wedding" required> Only Wedding (10th of May)
 				</label>
 				
 				<label>
-				<input type="radio" checked="checked" name="attendees[${attendeeCount}][event]" value="both" required> Both
+				<input type="radio" checked="checked" name="attendees[${attendeeCount}][event]" value="both" required> Both Wedding & Pre-Wedding
+				</label>
+
+				<label>
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="not coming" required> Not coming
 				</label>
 				</div>
 				</div>
