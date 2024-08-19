@@ -24,7 +24,7 @@ div.accomodation-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./public/pattern_pineapple.png');
+    background-image: url('./public/pattern_coco.png');
     opacity: 0.1; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */
