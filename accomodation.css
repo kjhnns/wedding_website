@@ -68,6 +68,10 @@ div.accomodation-section::before {
     margin-bottom: 15px;
 }
 
+.grid-item a {
+    font-size: 1.15rem;
+}
+
 
 
 .grid-item a {
