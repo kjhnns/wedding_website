@@ -46,11 +46,13 @@
 			function addAttendee() {
 				const attendeeFields = document.getElementById('attendee-fields');
 
+				const today = new Date().toISOString().split('T')[0];
 				const attendeeDiv = document.createElement('div');
 				attendeeDiv.setAttribute('id', 'attendee-' + attendeeCount);
 				attendeeDiv.setAttribute('class', 'attendee-wrapper');
 				attendeeDiv.innerHTML = `
 				<div class="attendee_container">
+				<input type="hidden" name="attendees[${attendeeCount}][date]" value="${today}" required>
 				<div class="attendee__title">
 				<h3 class="attendee-counter">Attendee ${attendeeCount + 1}</h3>
 				<button type="button" class="removeAttendee button button-clear" onclick="removeAttendee(${attendeeCount})">Remove</button>
@@ -128,7 +130,8 @@
                 firstName: formData.get(`attendees[${i}][firstName]`),
                 lastName: formData.get(`attendees[${i}][lastName]`),
                 email: formData.get(`attendees[${i}][email]`),
-                event: formData.get(`attendees[${i}][event]`)
+                event: formData.get(`attendees[${i}][event]`),
+                date: formData.get(`attendees[${i}][date]`)
             };
             if (attendee.firstName && attendee.lastName && attendee.email && attendee.event) {
                 attendees.push(attendee);
@@ -162,26 +165,29 @@
 
 
 
+            <div class="menu__section">
+                <div class="menu__image">
+                    <img src="./public/sand.jpeg" alt="Descriptive Alt Text">
+                </div>
+                <div class="menu__text">
+                    <ul class="menu-list"><li>
+                        <a href="./index.html">Home</a></li>   
+                        <li><a href="#">Agenda</a></li>    
+                        <li><a href="./travel_tips.html">Travel tips</a></li>    
+                        <li><a href="./accomodation.html">Acommodation</a></li>        
+                        <li><a href="#">Dress Code</a></li>    
+                        <li><a href="./gifts.html">Gifts</a></li>    
+                        <li><a href="./rsvp.html">RSVP</a></li>    
+                    </ul>
+                    <hr/>
+                     <ul class="menu-list">
+                        <li><a href="#">Deutsch</a></li>   
+                        <li><a href="#">Português</a></li>   
+                    </ul>
+                </div>
+            </div>
+									</main>
 
 
-		<div class="menu__section">
-			<div class="menu__image">
-				<img src="./public/sand.jpeg" alt="Descriptive Alt Text">
-			</div>
-			<div class="menu__text">
-				<ul class="menu-list"><li>
-					<a href="./index.html">Home</a></li>   
-					<li><a href="#">Agenda</a></li>    
-					<li><a href="./travel_tips.html">Travel tips</a></li>    
-					<li><a href="./accomodation.html">Acommodation</a></li>        
-					<li><a href="#">Dress Code</a></li>    
-					<li><a href="#">Gifts</a></li>    
-					<li><a href="./rsvp.html">RSVP</a></li>    
-				</ul>
-			</div>
-		</div>
-	</main>
-
-
-</body>
-</html>
+								</body>
+								</html>
