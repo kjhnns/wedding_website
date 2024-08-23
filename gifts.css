@@ -1,0 +1,137 @@
+
+.collapsible {
+      font-family: 'Cardo', serif;
+/*    background-color: #777;*/
+/*    color: white;*/
+background:    none;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.8rem;
+        font-weight: bold;
+    display: flex;               /* Use flexbox to keep items on one line */
+    justify-content: space-between; /* Space out the text and icon */
+    align-items: center;    
+
+    margin-top: 5px;
+/*    text-decoration: underline;*/
+    color: black;
+}
+
+.collapsible:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+/*    font-size: 13px;*/
+/*    color: white;*/
+    float: right;
+    margin-left: 5px;
+    flex-shrink: 0;    
+
+/*    text-decoration: none !important;*/
+}
+
+.collapsible.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (−) */
+/*    text-decoration: none !important;*/
+}
+
+.content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+/*    background-color: #f1f1f1;*/
+}
+
+
+
+
+
+
+div.top-section {
+
+    display: grid;
+    place-items: center;
+/*    height: 100vh;*/
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensure this is above the pseudo-element */
+
+  /*  background-image: url('public/pattern_palms.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Set the desired opacity */
+
+}
+
+div.top-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./public/pattern_palm2.jpg');
+    opacity: 0.1; /* Set the desired opacity */
+    z-index: -1; /* Place it behind the content */
+    pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+}
+
+
+
+
+
+
+div.info-section  {
+/*    margin: 0 40%;*/
+Width: 500px;
+    font-size: 1.25rem;
+    line-height: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10%;
+}
+
+div.info-section  p {
+    text-align: center;
+}
+
+div.info-section a {
+    font-size: 1.4rem;
+}
+
+
+
+div.info-section ul {
+    margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+
+
+    div.info-section  {
+
+        margin: 30px 20px;
+        width: auto;
+    }
+
+
+}
+@media (max-width: 768px) {
+
+
+    div.info-section  {
+
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+
+        }
+
+div.info-section a {
+    font-size: 1.15rem;
+}
+
+}
