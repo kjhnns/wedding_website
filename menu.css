@@ -76,7 +76,7 @@ background-color: #f9f9f9; /* Light background color */
 ul.menu-list {
     list-style-type: none; /* Remove the default bullet points */
     padding-left: 0; /* Remove left padding if necessary */
-    text-align: center;
+    text-align: left;
 }
 
 ul.menu-list li {

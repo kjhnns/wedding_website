@@ -17,23 +17,28 @@
 </head>
 <body>
 
+<script>
+    window.language = 'de'; // Set the language parameter
+</script>
 
 	<main>
 		<div class="rsvp-section">
-			<div class='title'><h1>RSVP</h1></div>
+			<div class='title'><h1><span id="string__rsvp__title"></span> </h1></div>
 			<div class="form-section">
-				<p class="instructions">Please submit the form for everyone attending with you (including kids). Select whether each person will attend the pre-wedding party. The email address provided will be used to send updates about the wedding and a confirmation email for your RSVP. You may use the same email for all attendees.
-				If you need to update your RSVP, you can resubmit the form or reply to the confirmation email; both methods will be acknowledged. To check if you've already responded, please refer to your email. </p>
+				<p class="instructions"><span id="string__rsvp__instructions"></span> </p>
 				<form id="rsvp-form">
 					<div id="attendee-fields">
 						<!-- Attendee fields will be added here dynamically -->
 					</div>
 					<div id="confirmation-message">
-					<p>Thank you! Your RSVP has been submitted successfully.</p>
+					<p>
+<span id="string__rsvp__confirmation"></span> 
+					</p>
 				</div>
 					<div class="form-controls">
-						<button type="button" class="button button-clear" onclick="addAttendee()">Add Attendee</button>
-						<button type="submit" class="button">Submit RSVP</button>
+						<button type="button" class="button button-clear" onclick="addAttendee()"><span id="string__rsvp__addAttendee"></span> </button>
+						<button type="submit" class="button">
+						<span id="string__rsvp__submit"></span> </button>
 					</div>
 				</form>
 				
@@ -42,6 +47,49 @@
 
 		<script>
 			let attendeeCount = 0;
+
+			var en_language_strings = {
+				remove: "Remove",
+				firstName: "First Name",
+				lastName: "Last Name",
+				email: 'Email',
+				eventSelect: 'Select Event',
+				attendee: 'Attendee',
+				notAttending: 'Not attending',
+				optionPreWedParty: 'Pre-Wedding Party (9th of May, starts at ~7pm)',
+				optionPreWedBoat: 'Pre-Wedding Boat Tour (9th of May, starts at ~2pm)',
+				optionPreWedding: 'Wedding Ceremony (10th of May, at ~2pm)',
+			};
+
+			var de_language_strings = {
+			    remove: "Entfernen",
+			    firstName: "Vorname",
+			    lastName: "Nachname",
+			    email: "E-Mail",
+			    eventSelect: "Veranstaltung auswählen",
+			    attendee: "Teilnehmer",
+			    notAttending: "Nimmt nicht teil",
+			    optionPreWedParty: "Vorhochzeitsfeier (9. Mai, beginnt um ~19 Uhr)",
+			    optionPreWedBoat: "Vorhochzeits-Bootstour (9. Mai, beginnt um ~14 Uhr)",
+			    optionPreWedding: "Hochzeitszeremonie (10. Mai, um ~14 Uhr)",
+			};
+			var pt_br_language_strings = {
+			    remove: "Remover",
+			    firstName: "Primeiro Nome",
+			    lastName: "Sobrenome",
+			    email: "E-mail",
+			    eventSelect: "Selecione o Evento",
+			    attendee: "Participante",
+			    notAttending: "Não comparecendo",
+			    optionPreWedParty: "Festa Pré-Casamento (9 de maio, começa às ~19h)",
+			    optionPreWedBoat: "Passeio de Barco Pré-Casamento (9 de maio, começa às ~14h)",
+			    optionPreWedding: "Cerimônia de Casamento (10 de maio, às ~14h)",
+			};
+
+			languageStrings = window.language ==='en'? en_language_strings : window.language ==='de'? de_language_strings:  pt_br_language_strings;
+
+
+
 
 			function addAttendee() {
 				const attendeeFields = document.getElementById('attendee-fields');
@@ -54,44 +102,66 @@
 				<div class="attendee_container">
 				<input type="hidden" name="attendees[${attendeeCount}][date]" value="${today}" required>
 				<div class="attendee__title">
-				<h3 class="attendee-counter">Attendee ${attendeeCount + 1}</h3>
+				<h3 class="attendee-counter">${languageStrings["attendee"]} ${attendeeCount + 1}</h3>
 				<button type="button" class="removeAttendee button button-clear" onclick="removeAttendee(${attendeeCount})">Remove</button>
 				</div>
 				<div class="attendee__group">
 				<div class="attendee__variable">
-				<label for="first-name-${attendeeCount}">First Name:</label>
+				<label for="first-name-${attendeeCount}">${languageStrings["firstName"]}:</label>
 				<input type="text" name="attendees[${attendeeCount}][firstName]" required>
 				</div>
 				<div class="attendee__variable">
-				<label for="last-name-${attendeeCount}">Last Name:</label>
+				<label for="last-name-${attendeeCount}">${languageStrings["lastName"]}:</label>
 				<input type="text" name="attendees[${attendeeCount}][lastName]" required>
 				</div>
 				<div class="attendee__variable">
-				<label for="email-${attendeeCount}">Email:</label>
+				<label for="email-${attendeeCount}">${languageStrings["email"]}:</label>
 				<input type="email" name="attendees[${attendeeCount}][email]" required>
 				</div>
 				<div class="attendee__variable select">
-				<p style="margin-bottom: 10px">Select Event:</p>
+				<p style="margin-bottom: 10px" id="selectEventLabel-${attendeeCount}">${languageStrings["eventSelect"]}:</p>
 				<label>
-				<input type="radio" name="attendees[${attendeeCount}][event]" value="pre wedding" required> Only Pre-Wedding Party (9th of May)
+				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" name="attendees[${attendeeCount}][event_boattour]" checked="checked" value="pre wedding boat tour" > ${languageStrings["optionPreWedBoat"]}
 				</label>
 				<label>
-				<input type="radio" name="attendees[${attendeeCount}][event]" value="wedding" required> Only Wedding (10th of May)
+				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" name="attendees[${attendeeCount}][event_preparty]" checked="checked" value="pre wedding sunset party" > ${languageStrings["optionPreWedParty"]}
 				</label>
-				
 				<label>
-				<input type="radio" checked="checked" name="attendees[${attendeeCount}][event]" value="both" required> Both Wedding & Pre-Wedding
+				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" name="attendees[${attendeeCount}][event_wedding]" checked="checked" value="wedding" > ${languageStrings["optionPreWedding"]}
 				</label>
-
-				<label>
-				<input type="radio" name="attendees[${attendeeCount}][event]" value="not coming" required> Not coming
+			<label>
+				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" id="checkboxNotAttending-${attendeeCount}" name="attendees[${attendeeCount}][event_notattending]" data-attendee="${attendeeCount}" value="not-attending" > ${languageStrings["notAttending"]}
 				</label>
 				</div>
 				</div>
 				</div>
 				`;
 				attendeeFields.appendChild(attendeeDiv);
+		
+		const specialCheckbox = document.getElementById('checkboxNotAttending-'+attendeeCount); 
+
+	    specialCheckbox.addEventListener('change', function() {
+
+	    const otherCheckboxes = document.querySelectorAll(`input[type='checkbox'].attendeeEventCheckbox-${this.dataset.attendee}:not(#checkboxNotAttending-${this.dataset.attendee})`);
+
+        if (this.checked) {
+            otherCheckboxes.forEach(checkbox => {
+                checkbox.disabled = true;
+                checkbox.checked = false;
+            });
+        } else {
+            otherCheckboxes.forEach(checkbox => {
+                checkbox.disabled = false;
+            });
+        }
+    });
+
+
+
+
 				attendeeCount++;
+
+
 			}
 
 			function removeAttendee(id) {
@@ -118,46 +188,84 @@
 				});
 			}
 
-			document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+		document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-        const formData = new FormData(this);
-        const attendees = [];
+var getSelectedEvents = function(formData, index) {
+    const selectedEvents = [];
+    const eventNames = ['event_wedding', 'event_preparty', 'event_boattour']; // Replace with actual event names
+    const eventValues = {
+    	event_wedding:'Wedding', 
+    	event_preparty: 'Pre-Wedding Party',
+    	event_boattour: 'Pre-Wedding Boat Tour'
+    }
 
-        // Construct the JSON object
-        for (let i = 0; i < attendeeCount; i++) {
-            const attendee = {
-                firstName: formData.get(`attendees[${i}][firstName]`),
-                lastName: formData.get(`attendees[${i}][lastName]`),
-                email: formData.get(`attendees[${i}][email]`),
-                event: formData.get(`attendees[${i}][event]`),
-                date: formData.get(`attendees[${i}][date]`)
-            };
-            if (attendee.firstName && attendee.lastName && attendee.email && attendee.event) {
-                attendees.push(attendee);
-            }
+    eventNames.forEach(eventName => {
+        if (formData.get(`attendees[${index}][${eventName}]`)) {
+            selectedEvents.push(eventName);
+        }
+    });
+
+    return selectedEvents.length > 0 ? selectedEvents.join(', ') : 'not attend';
+}
+
+
+    const formData = new FormData(this);
+    const attendees = [];
+
+    for (let i = 0; i < attendeeCount; i++) {
+        const attendee = {
+            firstName: formData.get(`attendees[${i}][firstName]`),
+            lastName: formData.get(`attendees[${i}][lastName]`),
+            email: formData.get(`attendees[${i}][email]`),
+            event: getSelectedEvents(formData, i),
+            date: formData.get(`attendees[${i}][date]`)
+        };
+
+        if (attendee.firstName && attendee.lastName && attendee.email && attendee.event) {
+            attendees.push(attendee);
         }
 
-        const jsonData = JSON.stringify({ attendees });
+        let checkboxValidation = false;
+        const checkboxes = document.querySelectorAll(`input[type="checkbox"].attendeeEventCheckbox-${i}`);
 
-        fetch('https://hook.eu1.make.com/vpg4ialld8bw9jyrp54wfnvclwdo8v2a', {
-            method: 'POST',
-            body: jsonData,
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        .then(response => response.text())
-        .then(data => {
-            // Show confirmation message
-            document.getElementById('confirmation-message').style.display = 'block';
-            // Optionally, you could also clear the form or hide it after submission
-            document.getElementById('rsvp-form').reset();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+        checkboxes.forEach(checkbox => {
+	        if (checkbox.checked) {
+	            checkboxValidation = true;
+	        }
+	    })
+
+        const warningMessage = document.getElementById('selectEventLabel-'+i);
+	    if (checkboxValidation === false) {
+	        warningMessage.style.color = 'darkred';
+	        warningMessage.style.fontWeight = 'bold';
+	        return
+		}
+
+	        warningMessage.style.color = 'black';
+	        warningMessage.style.fontWeight = 'normal';
+    }
+
+    const jsonData = JSON.stringify({ attendees });
+
+    fetch('https://hook.eu1.make.com/vpg4ialld8bw9jyrp54wfnvclwdo8v2a', {
+        method: 'POST',
+        body: jsonData,
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('confirmation-message').style.display = 'block';
+        document.getElementById('rsvp-form').reset();
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
+});
+
+
 
     // Initial attendee added on page load
 			addAttendee();
@@ -165,28 +273,8 @@
 
 
 
-    
-       <div class="menu__section">
-                <div class="menu__image">
-                    <img src="https://camilajohannes.com/public/sand.jpeg" alt="some sand">
-                </div>
-                <div class="menu__text">
-                    <ul class="menu-list"><li>
-                        <a href="./index.html">Home</a></li>   
-                        <li><a href="./agenda.html">Agenda</a></li>    
-                        <li><a href="./travel_tips.html">Travel tips</a></li>    
-                        <li><a href="./accomodation.html">Acommodation</a></li>        
-                        <li><a href="./dress_code.html">Dress Code</a></li>    
-                        <li><a href="./gifts.html">Gifts</a></li>    
-                        <li><a href="./rsvp.html">RSVP</a></li>    
-                    </ul>
-                    <hr/>
-                     <ul class="menu-list">
-                        <li><a href="../de">Deutsch</a></li>   
-                        <li><a href="../pt">Português</a></li>   
-                    </ul>
-                </div>
-            </div>
+          <div class="menu__section"></div>
+<script src="../loader.js"></script>
 
 
 

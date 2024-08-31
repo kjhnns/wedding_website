@@ -209,11 +209,11 @@ select:focus {
 }
 
 /* Radio Buttons */
-input[type="radio"] {
+input[type="checkbox"] {
     margin-right: 0.5rem;
 }
 
-label input[type="radio"] + span {
+label input[type="checkbox"] + span {
     display: inline-block;
     margin-right: 1rem;
     font-size: 1rem;
