@@ -48,7 +48,7 @@ div.quote-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./public/pattern_farn.png');
+    background-image: url('https://camilajohannes.com/public/pattern_farn.png');
     opacity: 0.2; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */

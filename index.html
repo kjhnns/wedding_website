@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" /> 
-    <link rel="stylesheet" href="menu.css" /> 
-    <link rel="stylesheet" href="index.css" /> 
+    <link rel="stylesheet" href="./style.css" /> 
+    <link rel="stylesheet" href="./menu.css" /> 
+    <link rel="stylesheet" href="./index.css" /> 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♥️</text></svg>">
 
 
@@ -28,59 +28,33 @@
 
 
         <div class="video-container">
-            <video autoplay muted playsinline loop onloadeddata="hidePlaceholder()">
-                <source src="./public/video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
                 <div class="placeholder" id="placeholder"></div>
                 <div class="foreground-text">
 
                     <h1>Camila & Johannes</h1>
-                    <p>10 May 2025</p>
-                    <p><a href="https://maps.app.goo.gl/gxAmYMQtpQ17wgD99">Angra dos Reis, Brazil</a></p>
-                    <a href="./rsvp.html" class="outlined-button">RSVP</a>
+                  <script type="text/javascript">
+    // Get the browser's language
+    var userLang = navigator.language || navigator.userLanguage;
 
-                </div>
+    // Convert language to lower case
+    userLang = userLang.toLowerCase();
 
-                <div class="note">
-                    scroll down for more information
+    // Redirect based on the language
+    if (userLang.startsWith("en")) {
+        window.location.href = "https://camilajohannes.com/en/";
+    } else if (userLang.startsWith("pt")) {
+        window.location.href = "https://camilajohannes.com/pt/";
+    } else if (userLang.startsWith("de")) {
+        window.location.href = "https://camilajohannes.com/de/";
+    } else {
+        window.location.href = "https://camilajohannes.com/en/";
+    }
+</script>
+
+
                 </div>
             </div>
 
-
-        <div class="quote-section">
-
-        <div class="quote">
-            <div>…”May one's smile be, for the other, a feast, abundance, honey, fish roasted on the fire, ripe coconut on the beach, salty wave of the sea... May the words of the other be a white fabric, a transparent dress of joy, to be subtly enchanted away. And in the end and the beginning of tales, in the name of the unspoken, well-spoken name, in the name of all absent names and present nostalgias, of agape and philia, friendship and love, in the name of the sacred name, of the shared bread and the drunk wine, may the two be happy, today, tomorrow, and after…”</div>
-
-<div class="signature">Rubem Alves</div>
- 
-
-        </div>
-
-</div>
-
-            <div class="menu__section">
-                <div class="menu__image">
-                    <img src="./public/sand.jpeg" alt="Descriptive Alt Text">
-                </div>
-                <div class="menu__text">
-                    <ul class="menu-list"><li>
-                        <a href="./index.html">Home</a></li>   
-                        <li><a href="#">Agenda</a></li>    
-                        <li><a href="./travel_tips.html">Travel tips</a></li>    
-                        <li><a href="./accomodation.html">Acommodation</a></li>        
-                        <li><a href="#">Dress Code</a></li>    
-                        <li><a href="./gifts.html">Gifts</a></li>    
-                        <li><a href="./rsvp.html">RSVP</a></li>    
-                    </ul>
-                    <hr/>
-                     <ul class="menu-list">
-                        <li><a href="#">Deutsch</a></li>   
-                        <li><a href="#">Português</a></li>   
-                    </ul>
-                </div>
-            </div>
 
 
 

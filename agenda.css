@@ -73,7 +73,7 @@ div.top-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://camilajohannes.com/public/pattern_palm2.jpg');
+    background-image: url('https://camilajohannes.com/public/pattern_pineapple.png');
     opacity: 0.1; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */
@@ -86,7 +86,7 @@ div.top-section::before {
 
 div.info-section  {
 /*    margin: 0 40%;*/
-Width: 500px;
+/*Width: 600px;*/
     font-size: 1.25rem;
     line-height: 2.4rem;
     display: flex;

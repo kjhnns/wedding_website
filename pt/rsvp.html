@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>May 10th 2025 - Camila & Johannes</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="./milligram.min.css" />  -->
+	<link rel="stylesheet" href="../style.css" /> 
+	<link rel="stylesheet" href="../menu.css" /> 
+	<link rel="stylesheet" href="../rsvp.css" /> 
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♥️</text></svg>">
+
+
+</head>
+<body>
+
+
+	<main>
+		<div class="rsvp-section">
+			<div class='title'><h1>RSVP</h1></div>
+			<div class="form-section">
+				<p class="instructions">Please submit the form for everyone attending with you (including kids). Select whether each person will attend the pre-wedding party. The email address provided will be used to send updates about the wedding and a confirmation email for your RSVP. You may use the same email for all attendees.
+				If you need to update your RSVP, you can resubmit the form or reply to the confirmation email; both methods will be acknowledged. To check if you've already responded, please refer to your email. </p>
+				<form id="rsvp-form">
+					<div id="attendee-fields">
+						<!-- Attendee fields will be added here dynamically -->
+					</div>
+					<div id="confirmation-message">
+					<p>Thank you! Your RSVP has been submitted successfully.</p>
+				</div>
+					<div class="form-controls">
+						<button type="button" class="button button-clear" onclick="addAttendee()">Add Attendee</button>
+						<button type="submit" class="button">Submit RSVP</button>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+
+		<script>
+			let attendeeCount = 0;
+
+			function addAttendee() {
+				const attendeeFields = document.getElementById('attendee-fields');
+
+				const today = new Date().toISOString().split('T')[0];
+				const attendeeDiv = document.createElement('div');
+				attendeeDiv.setAttribute('id', 'attendee-' + attendeeCount);
+				attendeeDiv.setAttribute('class', 'attendee-wrapper');
+				attendeeDiv.innerHTML = `
+				<div class="attendee_container">
+				<input type="hidden" name="attendees[${attendeeCount}][date]" value="${today}" required>
+				<div class="attendee__title">
+				<h3 class="attendee-counter">Attendee ${attendeeCount + 1}</h3>
+				<button type="button" class="removeAttendee button button-clear" onclick="removeAttendee(${attendeeCount})">Remove</button>
+				</div>
+				<div class="attendee__group">
+				<div class="attendee__variable">
+				<label for="first-name-${attendeeCount}">First Name:</label>
+				<input type="text" name="attendees[${attendeeCount}][firstName]" required>
+				</div>
+				<div class="attendee__variable">
+				<label for="last-name-${attendeeCount}">Last Name:</label>
+				<input type="text" name="attendees[${attendeeCount}][lastName]" required>
+				</div>
+				<div class="attendee__variable">
+				<label for="email-${attendeeCount}">Email:</label>
+				<input type="email" name="attendees[${attendeeCount}][email]" required>
+				</div>
+				<div class="attendee__variable select">
+				<p style="margin-bottom: 10px">Select Event:</p>
+				<label>
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="pre wedding" required> Only Pre-Wedding Party (9th of May)
+				</label>
+				<label>
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="wedding" required> Only Wedding (10th of May)
+				</label>
+				
+				<label>
+				<input type="radio" checked="checked" name="attendees[${attendeeCount}][event]" value="both" required> Both Wedding & Pre-Wedding
+				</label>
+
+				<label>
+				<input type="radio" name="attendees[${attendeeCount}][event]" value="not coming" required> Not coming
+				</label>
+				</div>
+				</div>
+				</div>
+				`;
+				attendeeFields.appendChild(attendeeDiv);
+				attendeeCount++;
+			}
+
+			function removeAttendee(id) {
+				const attendeeDiv = document.getElementById('attendee-' + id);
+				attendeeDiv.remove();
+				updateAttendeeCounters();
+				attendeeCount--;
+			}
+
+			function updateAttendeeCounters() {
+				const counters = document.querySelectorAll('.attendee-counter');
+				counters.forEach((counter, index) => {
+					counter.textContent = `Attendee ${index + 1}`;
+				});
+
+        // Update the input names to keep them sequential
+				const inputs = document.querySelectorAll('#attendee-fields input, #attendee-fields label');
+				inputs.forEach(input => {
+					const name = input.getAttribute('name');
+					if (name) {
+						const newName = name.replace(/\[.*?\]/, `[${Array.prototype.indexOf.call(input.closest('.attendee_container').parentElement.children, input.closest('.attendee_container'))}]`);
+						input.setAttribute('name', newName);
+					}
+				});
+			}
+
+			document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+        const attendees = [];
+
+        // Construct the JSON object
+        for (let i = 0; i < attendeeCount; i++) {
+            const attendee = {
+                firstName: formData.get(`attendees[${i}][firstName]`),
+                lastName: formData.get(`attendees[${i}][lastName]`),
+                email: formData.get(`attendees[${i}][email]`),
+                event: formData.get(`attendees[${i}][event]`),
+                date: formData.get(`attendees[${i}][date]`)
+            };
+            if (attendee.firstName && attendee.lastName && attendee.email && attendee.event) {
+                attendees.push(attendee);
+            }
+        }
+
+        const jsonData = JSON.stringify({ attendees });
+
+        fetch('https://hook.eu1.make.com/vpg4ialld8bw9jyrp54wfnvclwdo8v2a', {
+            method: 'POST',
+            body: jsonData,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Show confirmation message
+            document.getElementById('confirmation-message').style.display = 'block';
+            // Optionally, you could also clear the form or hide it after submission
+            document.getElementById('rsvp-form').reset();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    // Initial attendee added on page load
+			addAttendee();
+		</script>
+
+
+
+    
+       <div class="menu__section">
+                <div class="menu__image">
+                    <img src="https://camilajohannes.com/public/sand.jpeg" alt="some sand">
+                </div>
+                <div class="menu__text">
+                    <ul class="menu-list"><li>
+                        <a href="./index.html">Home</a></li>   
+                        <li><a href="./agenda.html">Agenda</a></li>    
+                        <li><a href="./travel_tips.html">Travel tips</a></li>    
+                        <li><a href="./accomodation.html">Acommodation</a></li>        
+                        <li><a href="./dress_code.html">Dress Code</a></li>    
+                        <li><a href="./gifts.html">Gifts</a></li>    
+                        <li><a href="./rsvp.html">RSVP</a></li>    
+                    </ul>
+                    <hr/>
+                     <ul class="menu-list">
+                        <li><a href="../de">Deutsch</a></li>   
+                        <li><a href="../pt">Português</a></li>   
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </main>
+
+
+    </body>
+    </html>
