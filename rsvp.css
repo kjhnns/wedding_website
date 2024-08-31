@@ -38,6 +38,37 @@ div.rsvp-section::before {
 }
 
 
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Default state (unchecked) */
+input[type="checkbox"]:before {
+    content: "◻️"; /* Default emoji */
+    font-size: 20px;
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Checked state */
+input[type="checkbox"]:checked:before {
+    content: "✅"; /* Emoji when checked */
+    font-size: 20px;
+}
+
+
+/* Checked state */
+input[type="checkbox"]:disabled:before {
+    content: "❌"; /* Emoji when checked */
+    font-size: 20px;
+}
 
 
 .attendee-wrapper:first-child .removeAttendee  {
