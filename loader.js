@@ -90,7 +90,7 @@
       string__accomodation__headline: 'Unterkünfte',
       string__traveltips__headline: 'Reisetipps',
       string__gifts__headline: 'Geschenke',
-      string__dressCode__title: 'Kleiderordnung',
+      string__dressCode__title: 'Dress Code',
       string__agenda__headline: 'Agenda',
       string__agenda__preliminary: 'Vorläufige Agenda-Details folgen',
       string__agenda__wholeagenda: `<div class="day">
@@ -242,7 +242,7 @@
   <li><a href="./agenda.html">Programm</a></li>
   <li><a href="./travel_tips.html">Reisetipps</a></li>
   <li><a href="./accomodation.html">Unterkunft</a></li>
-  <li><a href="./dress_code.html">Kleiderordnung</a></li>
+  <li><a href="./dress_code.html">Dress Code</a></li>
   <li><a href="./gifts.html">Geschenke</a></li>
   <li><a href="./rsvp.html">RSVP</a></li>
   </ul>
