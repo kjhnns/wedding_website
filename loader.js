@@ -74,7 +74,7 @@
       string__index__rsvp: 'RSVP',
       string__rsvp__title: 'RSVP',
       string__rsvp__addAttendee: 'Teilnehmer hinzufügen',
-      string__rsvp__submit: 'RSVP absenden',
+      string__rsvp__submit: 'abschicken',
       string__rsvp__confirmation: 'Danke! Dein RSVP wurde erfolgreich abgeschickt.',
       string__rsvp__instructions: `Bitte füll das Formular für alle aus, die mit dir kommen (auch für Kinder). Wähl aus, ob jede Person zur Vorhochzeitsfeier kommt. Die angegebene E-Mail-Adresse wird benutzt, um Updates zur Hochzeit und die Bestätigung deines RSVP zu schicken. Du kannst dieselbe E-Mail für alle Teilnehmer verwenden.
       Falls du dein RSVP ändern musst, kannst du das Formular nochmal abschicken oder einfach auf die Bestätigungs-E-Mail antworten – beides funktioniert. Um zu checken, ob du schon geantwortet hast, schau einfach in deine E-Mails.`,

@@ -103,7 +103,7 @@
 				<input type="hidden" name="attendees[${attendeeCount}][date]" value="${today}" required>
 				<div class="attendee__title">
 				<h3 class="attendee-counter">${languageStrings["attendee"]} ${attendeeCount + 1}</h3>
-				<button type="button" class="removeAttendee button button-clear" onclick="removeAttendee(${attendeeCount})">Remove</button>
+				<button type="button" class="removeAttendee button button-clear" onclick="removeAttendee(${attendeeCount})">${languageStrings["remove"]}</button>
 				</div>
 				<div class="attendee__group">
 				<div class="attendee__variable">
