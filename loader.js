@@ -308,7 +308,6 @@ if (language === 'en') {
 
     // Condition to load the HTML based on language parameter
 var menuSection = document.querySelector('.menu__section');
-console.log(menuSection)
 if (menuSection) {
   if (language === 'en') {
      menuSection.innerHTML = menuHtmlEnglish;
