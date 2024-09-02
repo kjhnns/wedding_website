@@ -34,7 +34,7 @@ div.accomodation-section::before {
 
 .three-column-section {
     display: grid;
-
+max-width: 1440px;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     gap: 5%; /* Space between the grid items */
     padding: 5%;
