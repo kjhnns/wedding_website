@@ -125,7 +125,7 @@ h3 {
 .attendee__title {
 	display: flex;
 	justify-content: space-between;
-	margin: 5%;
+	margin: 3% 5%;
 }
 
 .attendee__variable {    
