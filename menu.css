@@ -1,5 +1,7 @@
 
-.menu__section {
+.menu__section {    
+    max-width: 1600px;
+    margin: 0 auto;
     display: grid;
     height: 80vh;
 /*    width: 100%;*/
