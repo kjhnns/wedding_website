@@ -50,9 +50,7 @@
         <h2>Women</h2>
         <p>
         <ul>
-        <li>Sommer dresses for the beach</li>
-        <li>Light colors</li>
-        <li>Comfortable shoes</li>
+        <li>tbd</li>
         </ul>
 
         </p>
@@ -60,8 +58,9 @@
 
         <div>
         <h2>Men</h2>
-        <li>Light comfortable cloth</li>
-        <li>Beach chique</li>
+        <ul>
+        <li>tbd</li>
+        </ul>
         </div>`,
 
 
@@ -120,9 +119,7 @@
       <h2>Frauen</h2>
       <p>
       <ul>
-      <li>Sommerkleider für den Strand</li>
-      <li>Helle Farben</li>
-      <li>Bequeme Schuhe</li>
+      <li>...</li>
       </ul>
 
       </p>
@@ -130,8 +127,9 @@
 
       <div>
       <h2>Männer</h2>
-      <li>Leichte, bequeme Klamotten</li>
-      <li>Strandchic</li>
+      <ul>
+      <li>...</li>
+      </ul>
       </div>`,
   };
 
@@ -186,9 +184,7 @@
       <h2>Mulheres</h2>
       <p>
       <ul>
-      <li>Vestidos de verão para a praia</li>
-      <li>Cores claras</li>
-      <li>Calçados confortáveis</li>
+      <li>...</li>
       </ul>
 
       </p>
@@ -196,8 +192,9 @@
 
       <div>
       <h2>Homens</h2>
-      <li>Roupas leves e confortáveis</li>
-      <li>Chique praiano</li>
+      <ul>
+      <li>...</li>
+      </ul>
       </div>`,
   };
 
