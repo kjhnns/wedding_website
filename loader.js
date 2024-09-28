@@ -6,8 +6,8 @@
 		string__rsvp__addAttendee: 'Add Attendee',
 		string__rsvp__submit: 'Submit RSVP',
 		string__rsvp__confirmation: 'Thank you! Your RSVP has been submitted successfully.',
-		string__rsvp__instructions: `Please submit the form for everyone attending with you (including kids). Select whether each person will attend the pre-wedding party. The email address provided will be used to send updates about the wedding and a confirmation email for your RSVP. You may use the same email for all attendees.
-        If you need to update your RSVP, you can resubmit the form or reply to the confirmation email; both methods will be acknowledged. To check if you've already responded, please refer to your email.`,
+		string__rsvp__instructions: `Dear guest, please confirm your presence and all other attendees using the form below - including kids. Singles: our guest list is extremely limited, therefore we would like to keep the +1 rule as simple as "does the person you're bringing know either the bride or the groom?". We appreciate your understanding.
+        If you need to update your RSVP, you can resubmit the form or reply to the confirmation email.`,
         string__index__note: 'scroll down for more information',
         string__index__quote: `…”May one's smile be, for the other, a feast, abundance, honey, fish roasted on the fire, ripe coconut on the beach, salty wave of the sea... May the words of the other be a white fabric, a transparent dress of joy, to be subtly enchanted away. And in the end and the beginning of tales, in the name of the unspoken, well-spoken name, in the name of all absent names and present nostalgias, of agape and philia, friendship and love, in the name of the sacred name, of the shared bread and the drunk wine, may the two be happy, today, tomorrow, and after…”`,
         string__accomodation__praia_da_jaca: `<h2>Staying at Praia da Jaca</h2>
@@ -74,8 +74,8 @@ string__accomodation__hotels: `<h2>Hotels</h2>
       string__rsvp__addAttendee: 'Teilnehmer hinzufügen',
       string__rsvp__submit: 'abschicken',
       string__rsvp__confirmation: 'Danke! Dein RSVP wurde erfolgreich abgeschickt.',
-      string__rsvp__instructions: `Bitte füll das Formular für alle aus, die mit dir kommen (auch für Kinder). Wähl aus, ob jede Person zur Vorhochzeitsfeier kommt. Die angegebene E-Mail-Adresse wird benutzt, um Updates zur Hochzeit und die Bestätigung deines RSVP zu schicken. Du kannst dieselbe E-Mail für alle Teilnehmer verwenden.
-      Falls du dein RSVP ändern musst, kannst du das Formular nochmal abschicken oder einfach auf die Bestätigungs-E-Mail antworten – beides funktioniert. Um zu checken, ob du schon geantwortet hast, schau einfach in deine E-Mails.`,
+      string__rsvp__instructions: `Lieber Gast, bitte bestätige deine Anwesenheit und die aller anderen Teilnehmer mit dem untenstehenden Formular - auch Kinder. Singles: Unsere Gästeliste ist sehr begrenzt, daher möchten wir die +1-Regel so einfach wie möglich halten: "Kennt die Person, die du mitbringst, entweder die Braut oder den Bräutigam?". Wir danken dir für dein Verständnis.
+        Falls du dein RSVP ändern musst, kannst du das Formular nochmal abschicken oder einfach auf die Bestätigungs-E-Mail antworten.`,
       string__index__note: 'Runterscrollen für mehr Infos',
       string__index__quote: `…”Möge das Lächeln des einen für den anderen ein Fest, Überfluss, Honig, am Feuer gerösteter Fisch, reife Kokosnuss am Strand, salzige Welle des Meeres sein... Mögen die Worte des anderen ein weißes Tuch, ein transparenter Mantel der Freude sein, um sanft verzaubert davonzufliegen. Und am Ende und am Anfang der Geschichten, im Namen des Ungesagten, gut gesagten Namens, im Namen aller abwesenden Namen und gegenwärtigen Nostalgien, der Agape und Philia, Freundschaft und Liebe, im Namen des heiligen Namens, des geteilten Brotes und des getrunkenen Weins, mögen die beiden glücklich sein, heute, morgen und danach…”`,
       string__accomodation__praia_da_jaca: `<h2>Übernachten bei Praia da Jaca</h2>
@@ -141,8 +141,8 @@ string__accomodation__hotels: `<h2>Hotels</h2>
       string__rsvp__addAttendee: 'Adicionar Convidado',
       string__rsvp__submit: 'Enviar RSVP',
       string__rsvp__confirmation: 'Obrigado! Seu RSVP foi enviado com sucesso.',
-      string__rsvp__instructions: `Por favor, preencha o formulário para todos que vão com você (incluindo crianças). Escolha se cada pessoa vai participar da festa pré-casamento. O e-mail fornecido será usado para enviar atualizações sobre o casamento e uma confirmação do seu RSVP. Você pode usar o mesmo e-mail para todos os participantes.
-      Se precisar atualizar seu RSVP, você pode reenviar o formulário ou responder ao e-mail de confirmação; ambos os métodos serão reconhecidos. Para verificar se você já respondeu, por favor, confira seu e-mail.`,
+      string__rsvp__instructions: `Querido convidado, por favor, confirme sua presença e de todos os outros participantes usando o formulário abaixo - incluindo crianças. Solteiros: nossa lista de convidados é extremamente limitada, então gostaríamos de manter a regra do +1 o mais simples possível: "A pessoa que você está trazendo conhece a noiva ou o noivo?". Agradecemos a sua compreensão.
+        Se precisar atualizar seu RSVP, você pode reenviar o formulário ou responder ao e-mail de confirmação.`,
       string__index__note: 'Role para baixo para mais informações',
       string__index__quote: `…”Que o sorriso de um seja, para o outro, uma festa, abundância, mel, peixe assado na brasa, coco maduro na praia, onda salgada do mar... Que as palavras do outro sejam um tecido branco, um manto transparente de alegria, para ser sutilmente encantado para longe. E no fim e no começo das histórias, em nome do não dito, bem dito nome, em nome de todos os nomes ausentes e nostalgias presentes, da ágape e da filia, amizade e amor, em nome do nome sagrado, do pão compartilhado e do vinho bebido, que os dois sejam felizes, hoje, amanhã e depois…”`,
       string__accomodation__praia_da_jaca: `<h2>Hospedagem na Praia da Jaca</h2>
