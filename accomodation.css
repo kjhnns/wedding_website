@@ -17,6 +17,7 @@ div.accomodation-section {
 
 }
 
+
 div.accomodation-section::before {
     content: "";
     position: absolute;
@@ -24,12 +25,30 @@ div.accomodation-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://camilajohannes.com/public/pattern_coco.png');
-    opacity: 0.1; /* Set the desired opacity */
+    
+    background-image: url('./public/ocean_bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */
 }
 
+div.wrapper {
+    border-radius: 8px;
+    background: #FFF;
+    opacity: 1;
+    padding: 0 50px;
+    margin: 50px;
+
+}
+
+
+.title h1 {
+    margin-bottom:0;
+}
 
 
 .three-column-section {
@@ -37,7 +56,8 @@ div.accomodation-section::before {
 max-width: 1440px;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     gap: 5%; /* Space between the grid items */
-    padding: 5%;
+    padding: 0 5%;
+    padding-bottom: 5%;
 /*    background-color: #f9f9f9; /* Background color of the section */*/
 }
 
@@ -72,6 +92,14 @@ max-width: 1440px;
     font-size: 1.15rem;
 }
 
+.recommendation {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+
 
 
 .grid-item a {
@@ -95,6 +123,24 @@ max-width: 1440px;
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+div.accomodation-section::before {
+    opacity: .5
+}
+
+div.wrapper {
+    border-radius: 0;
+    background: none;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+    .recommendation {
+        margin: 20px 0;
+    }
     .three-column-section {
         grid-template-columns: 1fr; /* Stack the grid items */
         height: auto;

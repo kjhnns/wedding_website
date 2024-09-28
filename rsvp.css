@@ -31,7 +31,11 @@ div.rsvp-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://camilajohannes.com/public/pattern_pineapple.png');
+    background-image: url('./public/ocean_bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 0.08; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */

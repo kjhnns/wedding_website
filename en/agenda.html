@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="../agenda.css" /> 
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♥️</text></svg>">
 
-<script>
+	<script>
     window.language = 'en'; // Set the language parameter
 </script>
 
@@ -22,61 +22,48 @@
 
 	<main>
 		<div class="top-section">
+		<div class="wrapper">
 			<div class='title'><h1><span id="string__agenda__headline"></span></h1></div>
 
-
-
 			<div class="info-section">
-				
 				<p><i>
+					<span id="string__agenda__preliminary"></span></i></p>
 
-				<span id="string__agenda__preliminary"></span></i></p>
+					<span id="string__agenda__wholeagenda"></span>
 
-				<span id="string__agenda__wholeagenda"></span>
+				</div>
 
-
-
-
-
-
-
-
-				
+			</div>
+		</div>
 
 
 
-							</div>
+			<script type="text/javascript">
+				document.addEventListener('DOMContentLoaded', function() {
+					const collapsibles = document.querySelectorAll('.collapsible');
 
-						</div>
+					collapsibles.forEach(function(collapsible) {
+						collapsible.addEventListener('click', function() {
+							this.classList.toggle('active');
+							const content = this.nextElementSibling;
+							if (content.style.display === "block") {
+								content.style.display = "none";
+							} else {
+								content.style.display = "block";
+							}
+						});
+					});
+				});
+			</script>
 
 
-
-										<script type="text/javascript">
-											document.addEventListener('DOMContentLoaded', function() {
-												const collapsibles = document.querySelectorAll('.collapsible');
-
-												collapsibles.forEach(function(collapsible) {
-													collapsible.addEventListener('click', function() {
-														this.classList.toggle('active');
-														const content = this.nextElementSibling;
-														if (content.style.display === "block") {
-															content.style.display = "none";
-														} else {
-															content.style.display = "block";
-														}
-													});
-												});
-											});
-										</script>
-
-        
-                  <div class="menu__section"></div>
-<script src="../loader.js"></script>
+			<div class="menu__section"></div>
+			<script src="../loader.js"></script>
 
 
 
-        </main>
+		</main>
 
 
-    </body>
-    </html>
+	</body>
+	</html>

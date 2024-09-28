@@ -11,56 +11,55 @@
         string__index__note: 'scroll down for more information',
         string__index__quote: `…”May one's smile be, for the other, a feast, abundance, honey, fish roasted on the fire, ripe coconut on the beach, salty wave of the sea... May the words of the other be a white fabric, a transparent dress of joy, to be subtly enchanted away. And in the end and the beginning of tales, in the name of the unspoken, well-spoken name, in the name of all absent names and present nostalgias, of agape and philia, friendship and love, in the name of the sacred name, of the shared bread and the drunk wine, may the two be happy, today, tomorrow, and after…”`,
         string__accomodation__praia_da_jaca: `<h2>Staying at Praia da Jaca</h2>
-        <p><span style="font-style: italic;">Wedding location and stay at a private beach.</span> The two houses at Praia da Jaca offer direct access to the wedding location, a swimming pool, spacious living and dining rooms, a full kitchen, large varandas with sea view. Moreover, the houses come with a chef.</p><p class='CTA'>&euro;700 from 9th to 11th of May<br/> (<a href="tel:0041798278877">+41 79 827 88 77</a>).</p>`,
-        string__accomodation__airbnb:`<h2>Airbnb</h2>
-        <p>The Frade condominium has multiple apartments available on Airbnb, with prices ranging from &euro; 100 to &euro; 500 per night (see <a href="https://drive.google.com/file/d/1IJlBlgg53iFsxtFH0ABf98ETRHU21gO-/view">here</a>). The condominium has its own security, a golf course, restaurants, a shopping mall, a beach, and a port.</p>
-        <p><a href="https://www.airbnb.com/s/Condo-Porto-Frade-~-Porto-Frade--Angra-dos-Reis-~-State-of-Rio-de-Janeiro--Brazil/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-09-01&monthly_length=3&monthly_end_date=2024-12-01&price_filter_input_type=0&channel=EXPLORE&query=Condo%20Porto%20Frade%2C%20Angra%20dos%20Reis%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&place_id=ChIJWa08_3qynQARUT5FkVSCsl0&date_picker_type=calendar&flexible_trip_dates%5B%5D=may&source=structured_search_input_header&search_type=user_map_move&search_mode=regular_search&price_filter_num_nights=3&checkin=2025-05-08&checkout=2025-05-11&adults=4&ne_lat=-22.962542699894904&ne_lng=-44.43196261700666&sw_lat=-22.98175582692142&sw_lng=-44.446952050191385&zoom=15.345874667401493&zoom_level=15.345874667401493&search_by_map=true">See Airbnb Listings</a> in the Frade condominium`,
-        string__accomodation__hotels: `<h2>Hotels in the Frade condominium</h2>
-        not recommend staying in the city of Angra dos Reis because it is not very touristy, and the hotels are expensive for the value they offer. The following two Hotels are very close to the wedding location and part of the Porto Frade settlement (secure location)</p><ul><li><a href="https://www.booking.com/Share-9UJlmG">Hotel Fradissimo</a> $$; 1.5km from the Wedding location</li><li><a href="https://www.booking.com/Share-QqGsBH">Angra Boutique Hotel</a> $$$; 4 Star Hotel 500m from the Wedding location</li></ul>`,
+        <p>The wedding location offers two houses with 12 suites with sea view on a private beach, with a swimming pool, cooking* and cleaning service. Limited spots.</p><p class='CTA'>&euro;700 per room from 9th to 11th of May<br/> (<a href="tel:0041798278877">+41 79 827 88 77</a>)<br/><span style="font-style: italic;">*Food not included</span>.</p>`,
+string__accomodation__airbnb:`<h2>Airbnb</h2>
+        <p>The condominium where the wedding will take place has multiple stays available on Airbnb. We highly recommend this option if you want to share a space with friends.</p><p><a href="https://www.airbnb.com/s/Condo-Porto-Frade-~-Porto-Frade--Angra-dos-Reis-~-State-of-Rio-de-Janeiro--Brazil/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-09-01&monthly_length=3&monthly_end_date=2024-12-01&price_filter_input_type=0&channel=EXPLORE&query=Condo%20Porto%20Frade%2C%20Angra%20dos%20Reis%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&place_id=ChIJWa08_3qynQARUT5FkVSCsl0&date_picker_type=calendar&flexible_trip_dates%5B%5D=may&source=structured_search_input_header&search_type=user_map_move&search_mode=regular_search&price_filter_num_nights=3&checkin=2025-05-08&checkout=2025-05-11&adults=4&ne_lat=-22.962542699894904&ne_lng=-44.43196261700666&sw_lat=-22.98175582692142&sw_lng=-44.446952050191385&zoom=15.345874667401493&zoom_level=15.345874667401493&search_by_map=true">See listings available</a></p>`,
+string__accomodation__hotels: `<h2>Hotels</h2>
+        <p>The condominium has 2 hotels (the Fasano Hotel is already fully booked):</p><ul><li><a href="https://www.booking.com/Share-9UJlmG">Hotel Fradissimo</a> $$: 1.5km from wedding location</li><li><a href="https://www.booking.com/Share-QqGsBH">Angra Boutique Hotel</a> $$$: 500m from wedding location</li></ul>`,
         string__accomodation__headline: 'Accomodations',
+        string__accomodation__recommendation: 'We highly recommend staying in the Condominio Porto Frade since most accommodations are a walking distance from the wedding location.',
         string__traveltips__headline: 'Travel Tips',
         string__gifts__headline: 'Gifts',
         string__dressCode__title: 'Dress Code',
         string__agenda__headline: 'Agenda',
         string__agenda__preliminary: 'Preliminary agenda details to follow',
         string__agenda__wholeagenda: `<div class="day">
-        <h2>Friday 9th</h2>
-        <ul>
-        <li>Around 2pm: Boat tour with drinks and lunch until 5pm </li>
-        <li>Around 7pm: Pre-Wedding Sunset Party at the beach until 10pm</li>
-        </ul>
-        </div>
+      <h2>Friday 9th</h2>
+      <ul>
+      <li>2pm - 5pm: Boat tour with lunch and drinks</li>
+      <li>7pm - 10pm: Pre-Wedding Sunset Party at the Praia da Jaca</li>
+      </ul>
+      </div>
 
-        <div class="day">
-        <h2>Saturday 10th</h2>
-        <ul><li>At 2pm: Wedding ceremony at Praia da Jaca</li></ul>
-        </div>
+      <div class="day">
+      <h2>Saturday 10th</h2>
+      <ul><li>2pm: Wedding ceremony at Praia da Jaca</li></ul>
+      </div>
 
-        <div class="day">
-        <h2>Sunday 11th</h2>
-        <ul><li>Around 10am: Brunch</li></ul>
-        </div>`,
+      <div class="day">
+      <h2>Sunday 11th</h2>
+      <ul><li>10am: Brunch</li></ul>
+      </div>`,
         string__gifts__text: `
-        <p>Please don't feel obligated to give us a gift. We truly appreciate your thoughtfulness, but with our wedding being a destination event that requires travel and accommodation, we aren't expecting any gifts. Your presence at our celebration is more than enough.</p>
+        <p>Attending a destination wedding is a big effort and commitment, which we truly appreciate. Therefore, your presence at our celebration is more than enough.</p>
 
-        <p>If you'd still like to give us something, we'd greatly appreciate it if you could mail it directly to our Zurich address or consider a monetary gift earmarked for a specific purpose. This would help us avoid the logistical challenges of transporting gifts from Brazil.</p>
+        <p>If you'd still like to gift us something, we'd greatly appreciate it if you could mail it directly to our address, or, in case of a monetary value, transfer to one of the accounts below.</p>
 
         <p>Thank you again for being a part of our special day!</p>`,
-        string__dressCode__text: `<div>
+
+        string__dressCode__text: `<div class="women">
         <h2>Women</h2>
-        <p>
-        <ul>
-        <li>tbd</li>
-        </ul>
+           <p>
+     Any lightweight fabric hem that falls below the knee is a safe bet. Feel free to play around with colors and patterns - so long as they’re not white or anything adjacent. Skip the stilettos altogether and opt for sandals with a block or wedge heel that won’t sink when you walk.
 
-        </p>
-        </div>
+      </p>
+      </div>
 
-        <div>
-        <h2>Men</h2>
-        <ul>
-        <li>tbd</li>
-        </ul>
+      <div class="men">
+      <h2>Men</h2>
+      <p>
+      Opt for light fabrics such as linen and cotton. Any color is welcome as long as you feel comfortable. Blazer is optional and it's probably too warm for a tie - but it's up to you. Avoid jeans pants, shorts, tshirts, flip flops, sport sneakers. In a nutshell: dress up comfortably but don't forget this is a wedding and it requires a certain level of formality.
+      </p>
         </div>`,
 
 
@@ -79,14 +78,15 @@
       Falls du dein RSVP ändern musst, kannst du das Formular nochmal abschicken oder einfach auf die Bestätigungs-E-Mail antworten – beides funktioniert. Um zu checken, ob du schon geantwortet hast, schau einfach in deine E-Mails.`,
       string__index__note: 'Runterscrollen für mehr Infos',
       string__index__quote: `…”Möge das Lächeln des einen für den anderen ein Fest, Überfluss, Honig, am Feuer gerösteter Fisch, reife Kokosnuss am Strand, salzige Welle des Meeres sein... Mögen die Worte des anderen ein weißes Tuch, ein transparenter Mantel der Freude sein, um sanft verzaubert davonzufliegen. Und am Ende und am Anfang der Geschichten, im Namen des Ungesagten, gut gesagten Namens, im Namen aller abwesenden Namen und gegenwärtigen Nostalgien, der Agape und Philia, Freundschaft und Liebe, im Namen des heiligen Namens, des geteilten Brotes und des getrunkenen Weins, mögen die beiden glücklich sein, heute, morgen und danach…”`,
-      string__accomodation__praia_da_jaca: `<h2>Übernachten in Praia da Jaca</h2>
-      <p><span style="font-style: italic;">Hochzeitsort und Unterkunft an einem privaten Strand.</span> Die beiden Häuser in Praia da Jaca bieten direkten Zugang zum Hochzeitsort, einen Pool, große Wohn- und Esszimmer, eine voll ausgestattete Küche und große Verandas mit Meerblick. Außerdem gibt’s einen Koch.</p><p class='CTA'>&euro;700 vom 9. bis 11. Mai<br/> (<a href="tel:0041798278877">+41 79 827 88 77</a>).</p>`,
-      string__accomodation__airbnb: `<h2>Airbnb</h2>
-      <p>Im Frade Condominium gibt's mehrere Apartments auf Airbnb, mit Preisen von &euro; 100 bis &euro; 500 pro Nacht (schau <a href="https://drive.google.com/file/d/1IJlBlgg53iFsxtFH0ABf98ETRHU21gO-/view">hier</a>). Das Condominium hat eigene Sicherheit, einen Golfplatz, Restaurants, ein Einkaufszentrum, einen Strand und einen Hafen.</p>
-      <p><a href="https://www.airbnb.com/s/Condo-Porto-Frade-~-Porto-Frade--Angra-dos-Reis-~-State-of-Rio-de-Janeiro--Brazil/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-09-01&monthly_length=3&monthly_end_date=2024-12-01&price_filter_input_type=0&channel=EXPLORE&query=Condo%20Porto%20Frade%2C%20Angra%20dos%20Reis%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&place_id=ChIJWa08_3qynQARUT5FkVSCsl0&date_picker_type=calendar&flexible_trip_dates%5B%5D=may&source=structured_search_input_header&search_type=user_map_move&search_mode=regular_search&price_filter_num_nights=3&checkin=2025-05-08&checkout=2025-05-11&adults=4&ne_lat=-22.962542699894904&ne_lng=-44.43196261700666&sw_lat=-22.98175582692142&sw_lng=-44.446952050191385&zoom=15.345874667401493&zoom_level=15.345874667401493&search_by_map=true">Schau dir die Airbnb-Angebote</a> im Frade Condominium an`,
-      string__accomodation__hotels: `<h2>Hotels im Frade Condominium</h2>
-      <p>Wir empfehlen nicht, in der Stadt Angra dos Reis zu übernachten, da sie nicht sehr touristisch ist und die Hotels für das, was sie bieten, zu teuer sind. Diese beiden Hotels sind ganz in der Nähe vom Hochzeitsort und Teil der Porto Frade Anlage (sicherer Standort)</p><ul><li><a href="https://www.booking.com/Share-9UJlmG">Hotel Fradissimo</a> $$; 1,5 km vom Hochzeitsort entfernt</li><li><a href="https://www.booking.com/Share-QqGsBH">Angra Boutique Hotel</a> $$$; 4-Sterne-Hotel 500 m vom Hochzeitsort entfernt</li></ul>`,
+      string__accomodation__praia_da_jaca: `<h2>Übernachten bei Praia da Jaca</h2>
+        <p>Der Hochzeitsort bietet zwei Häuser mit 12 Suiten mit Meerblick an einem privaten Strand, mit Swimmingpool, Koch* und Reinigungsservice. Begrenzte Plätze.</p><p class='CTA'>&euro;700 pro Zimmer vom 9. bis 11. Mai<br/> (<a href="tel:0041798278877">+41 79 827 88 77</a>)<br/><span style="font-style: italic;">*Essen nicht inbegriffen</span>.</p>`,
+string__accomodation__airbnb: `<h2>Airbnb</h2>
+        <p>Das Condominium, in dem die Hochzeit stattfindet, bietet mehrere Unterkünfte auf Airbnb. Wir empfehlen diese Option besonders, wenn ihr den Raum mit Freunden teilen möchtet.</p><p><a href="https://www.airbnb.com/s/Condo-Porto-Frade-~-Porto-Frade--Angra-dos-Reis-~-State-of-Rio-de-Janeiro--Brazil/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-09-01&monthly_length=3&monthly_end_date=2024-12-01&price_filter_input_type=0&channel=EXPLORE&query=Condo%20Porto%20Frade%2C%20Angra%20dos%20Reis%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&place_id=ChIJWa08_3qynQARUT5FkVSCsl0&date_picker_type=calendar&flexible_trip_dates%5B%5D=may&source=structured_search_input_header&search_type=user_map_move&search_mode=regular_search&price_filter_num_nights=3&checkin=2025-05-08&checkout=2025-05-11&adults=4&ne_lat=-22.962542699894904&ne_lng=-44.43196261700666&sw_lat=-22.98175582692142&sw_lng=-44.446952050191385&zoom=15.345874667401493&zoom_level=15.345874667401493&search_by_map=true">Verfügbare Unterkünfte ansehen</a></p>`,
+string__accomodation__hotels: `<h2>Hotels</h2>
+        <p>Das Condominium hat 2 Hotels (das Fasano Hotel ist bereits ausgebucht):</p><ul><li><a href="https://www.booking.com/Share-9UJlmG">Hotel Fradissimo</a> $$: 1,5 km vom Hochzeitsort entfernt</li><li><a href="https://www.booking.com/Share-QqGsBH">Angra Boutique Hotel</a> $$$: 500 m vom Hochzeitsort entfernt</li></ul>`,
+
       string__accomodation__headline: 'Unterkünfte',
+      string__accomodation__recommendation: 'Wir empfehlen, im Condominio Porto Frade zu bleiben, da die meisten Unterkünfte nur wenige Gehminuten vom Hochzeitsort entfernt sind.',
       string__traveltips__headline: 'Reisetipps',
       string__gifts__headline: 'Geschenke',
       string__dressCode__title: 'Dress Code',
@@ -95,27 +95,28 @@
       string__agenda__wholeagenda: `<div class="day">
       <h2>Freitag, 9. Mai</h2>
       <ul>
-      <li>Gegen 14 Uhr: Bootstour mit Drinks und Mittagessen bis 17 Uhr</li>
-      <li>Gegen 19 Uhr: Vorhochzeits-Sunset-Party am Strand bis 22 Uhr</li>
+      <li>14 Uhr - 17 Uhr: Bootstour mit Mittagessen und Getränken</li>
+      <li>19 Uhr - 22 Uhr: Vorhochzeits-Sunset-Party am Praia da Jaca</li>
       </ul>
       </div>
 
       <div class="day">
       <h2>Samstag, 10. Mai</h2>
-      <ul><li>Um 14 Uhr: Hochzeitszeremonie in Praia da Jaca</li></ul>
+      <ul><li>14 Uhr: Hochzeitszeremonie am Praia da Jaca</li></ul>
       </div>
 
       <div class="day">
       <h2>Sonntag, 11. Mai</h2>
-      <ul><li>Gegen 10 Uhr: Brunch</li></ul>
+      <ul><li>10 Uhr: Brunch</li></ul>
       </div>`,
       string__gifts__text: `
-      <p>Fühlt euch bitte nicht verpflichtet, uns ein Geschenk zu machen. Wir schätzen eure Aufmerksamkeit sehr, aber da unsere Hochzeit eine Reise erfordert und ihr Unterkunft braucht, erwarten wir keine Geschenke. Eure Anwesenheit bei unserer Feier ist mehr als genug.</p>
+    <p>Die Teilnahme an einer Destination-Wedding erfordert großen Einsatz und Engagement, was wir sehr schätzen. Daher ist eure Anwesenheit bei unserer Feier mehr als genug.</p>
 
-      <p>Wenn ihr uns trotzdem etwas schenken möchtet, freuen wir uns sehr, wenn ihr es direkt an unsere Adresse in Zürich schickt oder eine Geldspende für einen bestimmten Zweck in Betracht zieht. Das würde uns helfen, die logistischen Herausforderungen des Transports von Geschenken aus Brasilien zu vermeiden.</p>
+    <p>Wenn ihr uns trotzdem etwas schenken möchtet, würden wir es sehr begrüßen, wenn ihr es direkt an unsere Adresse schicken könntet oder, im Falle eines Geldbetrags, auf eines der untenstehenden Konten überweisen könntet.</p>
 
-      <p>Vielen Dank, dass ihr Teil unseres besonderen Tages seid!</p>`,
-      string__dressCode__text: `<div>
+    <p>Nochmals vielen Dank, dass ihr ein Teil unseres besonderen Tages seid!</p>`,
+
+      string__dressCode__text: `<div class="women">
       <h2>Frauen</h2>
       <p>
       <ul>
@@ -125,7 +126,7 @@
       </p>
       </div>
 
-      <div>
+      <div class="men">
       <h2>Männer</h2>
       <ul>
       <li>...</li>
@@ -145,13 +146,14 @@
       string__index__note: 'Role para baixo para mais informações',
       string__index__quote: `…”Que o sorriso de um seja, para o outro, uma festa, abundância, mel, peixe assado na brasa, coco maduro na praia, onda salgada do mar... Que as palavras do outro sejam um tecido branco, um manto transparente de alegria, para ser sutilmente encantado para longe. E no fim e no começo das histórias, em nome do não dito, bem dito nome, em nome de todos os nomes ausentes e nostalgias presentes, da ágape e da filia, amizade e amor, em nome do nome sagrado, do pão compartilhado e do vinho bebido, que os dois sejam felizes, hoje, amanhã e depois…”`,
       string__accomodation__praia_da_jaca: `<h2>Hospedagem na Praia da Jaca</h2>
-      <p><span style="font-style: italic;">Local do casamento e hospedagem em uma praia privada.</span> As duas casas na Praia da Jaca oferecem acesso direto ao local do casamento, piscina, amplas salas de estar e jantar, cozinha completa e grandes varandas com vista para o mar. Além disso, as casas vêm com um chef.</p><p class='CTA'>&euro;700 de 9 a 11 de maio<br/> (<a href="tel:0041798278877">+41 79 827 88 77</a>).</p>`,
-      string__accomodation__airbnb: `<h2>Airbnb</h2>
-      <p>O condomínio Frade tem vários apartamentos disponíveis no Airbnb, com preços de &euro; 100 a &euro; 500 por noite (veja <a href="https://drive.google.com/file/d/1IJlBlgg53iFsxtFH0ABf98ETRHU21gO-/view">aqui</a>). O condomínio tem segurança própria, campo de golfe, restaurantes, shopping, praia e porto.</p>
-      <p><a href="https://www.airbnb.com/s/Condo-Porto-Frade-~-Porto-Frade--Angra-dos-Reis-~-State-of-Rio-de-Janeiro--Brazil/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-09-01&monthly_length=3&monthly_end_date=2024-12-01&price_filter_input_type=0&channel=EXPLORE&query=Condo%20Porto%20Frade%2C%20Angra%20dos%20Reis%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&place_id=ChIJWa08_3qynQARUT5FkVSCsl0&date_picker_type=calendar&flexible_trip_dates%5B%5D=may&source=structured_search_input_header&search_type=user_map_move&search_mode=regular_search&price_filter_num_nights=3&checkin=2025-05-08&checkout=2025-05-11&adults=4&ne_lat=-22.962542699894904&ne_lng=-44.43196261700666&sw_lat=-22.98175582692142&sw_lng=-44.446952050191385&zoom=15.345874667401493&zoom_level=15.345874667401493&search_by_map=true">Veja as opções de Airbnb</a> no condomínio Frade`,
-      string__accomodation__hotels: `<h2>Hotéis no condomínio Frade</h2>
-      <p>Não recomendamos ficar na cidade de Angra dos Reis porque não é muito turística e os hotéis são caros pelo que oferecem. Os dois hotéis a seguir ficam bem perto do local do casamento e fazem parte do condomínio Porto Frade (local seguro)</p><ul><li><a href="https://www.booking.com/Share-9UJlmG">Hotel Fradissimo</a> $$; 1,5 km do local do casamento</li><li><a href="https://www.booking.com/Share-QqGsBH">Angra Boutique Hotel</a> $$$; Hotel 4 estrelas a 500m do local do casamento</li></ul>`,
+        <p>O local do casamento oferece duas casas com 12 suítes com vista para o mar em uma praia particular, com piscina, serviço de cozinha* e limpeza. Vagas limitadas.</p><p class='CTA'>&euro;700 por quarto do dia 9 ao 11 de maio<br/> (<a href="tel:0041798278877">+41 79 827 88 77</a>)<br/><span style="font-style: italic;">*Alimentação não incluída</span>.</p>`,
+string__accomodation__airbnb: `<h2>Airbnb</h2>
+        <p>O condomínio onde acontecerá o casamento tem várias acomodações disponíveis no Airbnb. Recomendamos muito esta opção se você quiser dividir o espaço com amigos.</p><p><a href="https://www.airbnb.com/s/Condo-Porto-Frade-~-Porto-Frade--Angra-dos-Reis-~-State-of-Rio-de-Janeiro--Brazil/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-09-01&monthly_length=3&monthly_end_date=2024-12-01&price_filter_input_type=0&channel=EXPLORE&query=Condo%20Porto%20Frade%2C%20Angra%20dos%20Reis%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&place_id=ChIJWa08_3qynQARUT5FkVSCsl0&date_picker_type=calendar&flexible_trip_dates%5B%5D=may&source=structured_search_input_header&search_type=user_map_move&search_mode=regular_search&price_filter_num_nights=3&checkin=2025-05-08&checkout=2025-05-11&adults=4&ne_lat=-22.962542699894904&ne_lng=-44.43196261700666&sw_lat=-22.98175582692142&sw_lng=-44.446952050191385&zoom=15.345874667401493&zoom_level=15.345874667401493&search_by_map=true">Veja acomodações disponíveis</a></p>`,
+string__accomodation__hotels: `<h2>Hotéis</h2>
+        <p>O condomínio tem 2 hotéis (o Hotel Fasano já está totalmente reservado):</p><ul><li><a href="https://www.booking.com/Share-9UJlmG">Hotel Fradíssimo</a> $$: 1,5 km do local do casamento</li><li><a href="https://www.booking.com/Share-QqGsBH">Angra Boutique Hotel</a> $$$: 500 m do local do casamento</li></ul>`,
+
       string__accomodation__headline: 'Hospedagem',
+      string__accomodation__recommendation: 'Recomendamos ficar no Condomínio Porto Frade, já que a maioria das acomodações fica a poucos minutos a pé do local do casamento.',
       string__traveltips__headline: 'Dicas de Viagem',
       string__gifts__headline: 'Presentes',
       string__dressCode__title: 'Traje',
@@ -160,41 +162,40 @@
       string__agenda__wholeagenda: `<div class="day">
       <h2>Sexta-feira, 9 de maio</h2>
       <ul>
-      <li>A partir das 14h: Passeio de barco com drinks e almoço até as 17h</li>
-      <li>A partir das 19h: Festa Pré-Casamento ao pôr do sol na praia até as 22h</li>
+      <li>14h - 17h: Passeio de barco com almoço e drinks</li>
+      <li>19h - 22h: Festa Pré-Casamento ao pôr do sol na Praia da Jaca</li>
       </ul>
       </div>
 
       <div class="day">
       <h2>Sábado, 10 de maio</h2>
-      <ul><li>Às 14h: Cerimônia de casamento na Praia da Jaca</li></ul>
+      <ul><li>14h: Cerimônia de casamento na Praia da Jaca</li></ul>
       </div>
 
       <div class="day">
       <h2>Domingo, 11 de maio</h2>
-      <ul><li>A partir das 10h: Brunch</li></ul>
+      <ul><li>10h: Brunch</li></ul>
       </div>`,
       string__gifts__text: `
-      <p>Não se sintam obrigados a nos dar um presente. Agradecemos muito o carinho, mas como nosso casamento é um evento de destino que exige viagem e hospedagem, não estamos esperando presentes. A sua presença na nossa celebração já é mais do que suficiente.</p>
+    <p>Participar de um casamento de destino requer um grande esforço e compromisso, o que nós realmente apreciamos. Portanto, a sua presença em nossa celebração é mais do que suficiente.</p>
 
-      <p>Se mesmo assim vocês quiserem nos presentear, ficaríamos muito gratos se puderem enviar o presente diretamente para o nosso endereço em Zurique ou considerar uma doação em dinheiro para um propósito específico. Isso nos ajudaria a evitar os desafios logísticos de transportar presentes do Brasil.</p>
+    <p>Se ainda assim você gostaria de nos presentear com algo, ficaríamos muito gratos se pudesse enviar diretamente para o nosso endereço ou, no caso de um valor monetário, transferir para uma das contas abaixo.</p>
 
-      <p>Muito obrigado por fazerem parte do nosso dia especial!</p>`,
-      string__dressCode__text: `<div>
+    <p>Obrigado novamente por fazer parte do nosso dia especial!</p>`,
+
+      string__dressCode__text: `<div class="women">
       <h2>Mulheres</h2>
       <p>
-      <ul>
-      <li>...</li>
-      </ul>
+     Any lightweight fabric hem that falls below the knee is a safe bet. Feel free to play around with colors and patterns - so long as they’re not white or anything adjacent. Skip the stilettos altogether and opt for sandals with a block or wedge heel that won’t sink when you walk.
 
       </p>
       </div>
 
-      <div>
+      <div class="men">
       <h2>Homens</h2>
-      <ul>
-      <li>...</li>
-      </ul>
+      <p>
+      Opt for light fabrics such as linen and cotton. Any color is welcome as long as you feel comfortable. Blazer is optional and it's probably too warm for a tie - but it's up to you. Avoid jeans pants, shorts, tshirts, flip flops, sport sneakers. In a nutshell: dress up comfortably but don't forget this is a wedding and it requires a certain level of formality.
+      </p>
       </div>`,
   };
 
@@ -209,9 +210,6 @@
 
 
   var menuHtmlEnglish = `
-  <div class="menu__image">
-  <img src="https://camilajohannes.com/public/sand.jpeg" alt="some sand">
-  </div>
   <div class="menu__text">
   <ul class="menu-list">
   <li><a href="./index.html">Home</a></li>
@@ -222,17 +220,17 @@
   <li><a href="./gifts.html">Gifts</a></li>
   <li><a href="./rsvp.html">RSVP</a></li>
   </ul>
-  <hr/>
+  
   <ul class="menu-list">
   <li><a href="../de">Deutsch</a></li>
   <li><a href="../pt">Português</a></li>
   </ul>
-  </div>`;
+  </div>
+<!--- Photo by <a href="https://unsplash.com/@joelvodell?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joel Vodell</a> on <a href="https://unsplash.com/photos/iphone-wallpaper-8Ogfqvw15Rg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  ----!>
+  `;
 
   var menuHtmlGerman = `
-  <div class="menu__image">
-  <img src="https://camilajohannes.com/public/sand.jpeg" alt="some sand">
-  </div>
   <div class="menu__text">
   <ul class="menu-list">
   <li><a href="./index.html">Startseite</a></li>
@@ -243,7 +241,7 @@
   <li><a href="./gifts.html">Geschenke</a></li>
   <li><a href="./rsvp.html">RSVP</a></li>
   </ul>
-  <hr/>
+  
   <ul class="menu-list">
   <li><a href="../en">English</a></li>
   <li><a href="../pt">Português</a></li>
@@ -252,9 +250,6 @@
 
 
   var menuHtmlPortuguese = `
-  <div class="menu__image">
-  <img src="https://camilajohannes.com/public/sand.jpeg" alt="some sand">
-  </div>
   <div class="menu__text">
   <ul class="menu-list">
   <li><a href="./index.html">Início</a></li>
@@ -264,7 +259,7 @@
   <li><a href="./gifts.html">Presentes</a></li>
   <li><a href="./rsvp.html">Confirme sua presença</a></li>
   </ul>
-  <hr/>
+  
   <ul class="menu-list">
   <li><a href="../en">English</a></li>
   <li><a href="../de">Deutsch</a></li>
