@@ -73,8 +73,12 @@ div.top-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://camilajohannes.com/public/pattern_palm2.jpg');
-    opacity: 0.1; /* Set the desired opacity */
+    background-image: url('./public/ocean_bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */
 }
