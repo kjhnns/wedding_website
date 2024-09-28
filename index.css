@@ -10,6 +10,8 @@ div.quote  {
     display: flex;
     flex-direction: column;
     color: #5C4033;
+        text-align: justify;
+
 }
 
 div.quote ul {
@@ -21,6 +23,9 @@ div.quote ul {
     div.quote  {
         font-size: 1.2rem;
         line-height: 2rem;
+        padding: 4rem 0;
+        line-height: 2.3rem;
+        text-align: left;
     }
 }
 

@@ -132,3 +132,24 @@ div.info-section a {
 }
 
 }
+
+@media (max-width: 768px) {
+
+div.top-section {
+    height: auto;
+        color: #fff;
+}
+
+div.top-section a, .collapsible {
+
+        color: #fff;
+}
+
+    div.top-section::before {
+        opacity: 1;
+    background-image: url('./public/ocean_bg2.jpg');
+    
+    }
+}
+
+

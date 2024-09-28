@@ -80,6 +80,7 @@ max-width: 1440px;
 .grid-item h2 {
     font-size: 1.5rem;
     margin: 15px 0;
+    font-weight: 300;
 }
 
 .grid-item p {
