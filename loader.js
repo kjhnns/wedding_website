@@ -116,22 +116,22 @@ string__accomodation__hotels: `<h2>Hotels</h2>
 
     <p>Nochmals vielen Dank, dass ihr ein Teil unseres besonderen Tages seid!</p>`,
 
-      string__dressCode__text: `<div class="women">
-      <h2>Frauen</h2>
-      <p>
-      <ul>
-      <li>...</li>
-      </ul>
+  string__dressCode__text: `<div class="women">
+        <h2>Frauen</h2>
+           <p>
+     Leichte Stoffe, die bis unter das Knie reichen, sind immer eine gute Wahl. Ihr könnt ruhig mit Farben und Mustern spielen, solange es nicht weiß oder etwas Ähnliches ist. Lasst die Stilettos zu Hause und entscheidet euch lieber für Sandalen mit Block- oder Keilabsatz, die nicht im Boden versinken, wenn ihr lauft.
 
       </p>
       </div>
 
       <div class="men">
       <h2>Männer</h2>
-      <ul>
-      <li>...</li>
-      </ul>
-      </div>`,
+      <p>
+      Leichte Stoffe wie Leinen oder Baumwolle sind super. Jede Farbe ist okay, solange du dich wohlfühlst. Ein Blazer ist optional, und eine Krawatte brauchst du wahrscheinlich nicht – es ist eh zu warm dafür, aber du entscheidest. Lass Jeans, Shorts, T-Shirts, Flip-Flops und Sportsneaker lieber weg. Kurz gesagt: Zieh dich bequem an, aber denk daran, dass es eine Hochzeit ist und ein bisschen schicker sein sollte.
+      </p>
+        </div>`,
+
+
   };
 
 
@@ -183,10 +183,10 @@ string__accomodation__hotels: `<h2>Hotéis</h2>
 
     <p>Obrigado novamente por fazer parte do nosso dia especial!</p>`,
 
-      string__dressCode__text: `<div class="women">
-      <h2>Mulheres</h2>
-      <p>
-     Any lightweight fabric hem that falls below the knee is a safe bet. Feel free to play around with colors and patterns - so long as they’re not white or anything adjacent. Skip the stilettos altogether and opt for sandals with a block or wedge heel that won’t sink when you walk.
+  string__dressCode__text: `<div class="women">
+        <h2>Mulheres</h2>
+           <p>
+     Tecidos leves com a barra abaixo do joelho são sempre uma boa pedida. Sinta-se à vontade para brincar com cores e estampas, desde que não seja branco ou algo parecido. Esqueça os saltos finos e opte por sandálias com salto bloco ou anabela, que não vão afundar enquanto você anda.
 
       </p>
       </div>
@@ -194,9 +194,11 @@ string__accomodation__hotels: `<h2>Hotéis</h2>
       <div class="men">
       <h2>Homens</h2>
       <p>
-      Opt for light fabrics such as linen and cotton. Any color is welcome as long as you feel comfortable. Blazer is optional and it's probably too warm for a tie - but it's up to you. Avoid jeans pants, shorts, tshirts, flip flops, sport sneakers. In a nutshell: dress up comfortably but don't forget this is a wedding and it requires a certain level of formality.
+      Tecidos leves como linho e algodão são ótimos. Qualquer cor vale, contanto que você se sinta confortável. O blazer é opcional, e gravata provavelmente vai ser quente demais – mas é você quem decide. Melhor evitar jeans, bermudas, camisetas, chinelos e tênis esportivos. Resumindo: vista-se confortável, mas não esqueça que é um casamento e pede um pouquinho de formalidade.
       </p>
-      </div>`,
+        </div>`,
+
+
   };
 
 
