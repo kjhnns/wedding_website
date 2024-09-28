@@ -197,6 +197,12 @@ h3 {
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
+
+    div.rsvp-section::before {
+        opacity: 1;
+    background-image: url('./public/ocean_bg2.jpg');
+    }
+
 div.wrapper {
     margin:0;
 }

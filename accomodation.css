@@ -125,9 +125,16 @@ max-width: 1440px;
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
-div.accomodation-section::before {
-    opacity: .5
-}
+    div.accomodation-section::before {
+        opacity: 1;
+    background-image: url('./public/ocean_bg2.jpg');
+    }
+
+    div.wrapper {
+        color: #fff;
+    }
+
+
 
 div.wrapper {
     border-radius: 0;
