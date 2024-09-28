@@ -48,7 +48,6 @@ flex-shrink: 0;
 
 
 
-
 div.top-section {
 
     display: grid;
@@ -91,6 +90,10 @@ div.wrapper {
 
 }
 
+
+
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
@@ -127,7 +130,7 @@ margin-bottom:10%;
 }
 
 div.info-section  p {
-    text-align: center;
+    text-align: left;
 }
 
 div.info-section a {
