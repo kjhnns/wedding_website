@@ -60,7 +60,7 @@ div.quote-section::before {
   background-position: center;
   background-repeat: no-repeat;
 
-    opacity: 0.4; /* Set the desired opacity */
+    opacity: 0.6; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */
 }
