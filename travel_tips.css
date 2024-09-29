@@ -76,8 +76,8 @@ div.top-section::before {
     background-image: url('./public/ocean_bg.jpg');
 
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: top;
+/*    background-repeat: repeat-x;*/
     opacity: 0.2; /* Set the desired opacity */
     z-index: -1; /* Place it behind the content */
     pointer-events: none; /* Ensure the background doesn't interfere with clicks */

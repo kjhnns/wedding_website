@@ -98,14 +98,14 @@ div.top-section {
     height: auto;
 }
     div.top-section::before {
-        opacity: 1;
-    background-image: url('./public/ocean_bg2.jpg');
+/*        opacity: 1;*/
+/*    background-image: url('./public/ocean_bg2.jpg');*/
     }
     div.wrapper {
-    background: none;
-    opacity: 1;
+/*    background: none;*/
+/*    opacity: 1;*/
     padding: 50px 0;
-color: #fff;
+/*color: #fff;*/
 }
 }
 
