@@ -1,9 +1,9 @@
-
 .collapsible {
-      font-family: 'Cardo', serif;
-/*    background-color: #777;*/
-/*    color: white;*/
-background:    none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    /*    background-color: #777;*/
+    /*    color: white;*/
+    background: none;
     cursor: pointer;
     padding: 10px 0;
     width: 100%;
@@ -11,40 +11,50 @@ background:    none;
     text-align: left;
     outline: none;
     font-size: 1.8rem;
-        font-weight: bold;
-    display: flex;               /* Use flexbox to keep items on one line */
-    justify-content: space-between; /* Space out the text and icon */
-    align-items: center;    
+    display: flex;
+    /* Use flexbox to keep items on one line */
+    justify-content: space-between;
+    /* Space out the text and icon */
+    align-items: center;
 
     margin-top: 5px;
-/*    text-decoration: underline;*/
-    color: black;
+    /*    text-decoration: underline;*/
+    color: #f9e8c5;
 }
 
 .collapsible:after {
-    content: '\002B'; /* Unicode character for "plus" sign (+) */
-/*    font-size: 13px;*/
-/*    color: white;*/
+    content: '\002B';
+    /* Unicode character for "plus" sign (+) */
+    /*    font-size: 13px;*/
+    /*    color: white;*/
     float: right;
     margin-left: 5px;
-    flex-shrink: 0;    
+    flex-shrink: 0;
 
-/*    text-decoration: none !important;*/
+    /*    text-decoration: none !important;*/
 }
 
 .collapsible.active:after {
-    content: "\2212"; /* Unicode character for "minus" sign (−) */
-/*    text-decoration: none !important;*/
+    content: "\2212";
+    /* Unicode character for "minus" sign (−) */
+    /*    text-decoration: none !important;*/
 }
 
 .content {
     padding: 0 10px;
     display: none;
     overflow: hidden;
-/*    background-color: #f1f1f1;*/
+    text-align: justify;
+    /*    background-color: #f1f1f1;*/
+    
 }
 
-
+hr {
+    width: 80%;
+    border: 1px solid #f9e8c5;
+    background: none;
+    opacity: 0.1;
+}
 
 
 
@@ -53,17 +63,22 @@ div.top-section {
 
     display: grid;
     place-items: center;
-/*    height: 100vh;*/
+    /*    height: 100vh;*/
     width: 100%;
     position: relative;
-    z-index: 1; /* Ensure this is above the pseudo-element */
+    z-index: 1;
+    /* Ensure this is above the pseudo-element */
 
-  /*  background-image: url('public/pattern_palms.jpg');
+    /*  background-image: url('public/pattern_palms.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5; /* Set the desired opacity */
+    color: #f9e8c5;
+}
 
+div.top-section a {
+    color: #f9e8c5;
 }
 
 div.top-section::before {
@@ -73,14 +88,10 @@ div.top-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./public/ocean_bg.jpg');
 
-    background-size: cover;
-    background-position: top;
-/*    background-repeat: repeat-x;*/
-    opacity: 0.2; /* Set the desired opacity */
-    z-index: -1; /* Place it behind the content */
-    pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+    background-color: #003e29;
+    z-index: -1;
+    /* Place it behind the content */
 }
 
 
@@ -88,7 +99,7 @@ div.top-section::before {
 
 
 
-div.info-section  {
+div.info-section {
     margin: 0 20%;
     font-size: 1.25rem;
     line-height: 2.4rem;
@@ -110,46 +121,41 @@ div.info-section ul {
 @media (max-width: 1200px) {
 
 
-    div.info-section  {
+    div.info-section {
 
         margin: 0 20px;
     }
 
 
 }
-@media (max-width: 768px) {
-
-
-    div.info-section  {
-
-    font-size: 1rem;
-    line-height: 2rem;
-
-        }
-
-div.info-section a {
-    font-size: 1.15rem;
-}
-
-}
 
 @media (max-width: 768px) {
 
-div.top-section {
-    height: auto;
-        color: #fff;
-}
 
-div.top-section a, .collapsible {
+    div.info-section {
 
-        color: #fff;
-}
+        font-size: 1rem;
+        line-height: 2rem;
 
-    div.top-section::before {
-        opacity: 1;
-    background-image: url('./public/ocean_bg2.jpg');
-    
     }
+
+    div.info-section a {
+        font-size: 1.15rem;
+    }
+
 }
 
+@media (max-width: 768px) {
 
+    div.top-section {
+        height: auto;
+        color: #f9e8c5;
+    }
+
+    div.top-section a,
+    .collapsible {
+
+        color: #f9e8c5;
+    }
+
+}

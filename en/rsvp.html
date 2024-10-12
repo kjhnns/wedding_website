@@ -6,8 +6,10 @@
 	<title>May 10th 2025 - Camila & Johannes</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="./milligram.min.css" />  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&display=swap"
+        rel="stylesheet">
+
 	<link rel="stylesheet" href="../style.css" /> 
 	<link rel="stylesheet" href="../menu.css" /> 
 	<link rel="stylesheet" href="../rsvp.css" /> 
@@ -60,12 +62,14 @@
 				firstName: "First Name",
 				lastName: "Last Name",
 				email: 'Email',
+				phone: 'WhatsApp',
 				eventSelect: 'Select Event',
 				attendee: 'Attendee',
 				notAttending: 'Not attending',
-				optionPreWedParty: 'Pre-Wedding Party (9th of May, starts at ~7pm)',
-				optionPreWedBoat: 'Pre-Wedding Boat Tour (9th of May, starts at ~2pm)',
-				optionPreWedding: 'Wedding Ceremony (10th of May, at ~2pm)',
+				optionPreWedParty: 'Pre-Wedding Party (09.05.2025)',
+				optionPreWedBoat: 'Boat Tour (09.05.2025)',
+				optionWedding: 'Wedding Ceremony (10.05.2025)',
+				optionBrunch: 'Brunch (11.05.2025)',
 			};
 
 			var de_language_strings = {
@@ -73,24 +77,28 @@
 			    firstName: "Vorname",
 			    lastName: "Nachname",
 			    email: "E-Mail",
+				phone: 'WhatsApp',
 			    eventSelect: "Veranstaltung auswählen",
 			    attendee: "Teilnehmer",
 			    notAttending: "Nimmt nicht teil",
-			    optionPreWedParty: "Vorhochzeitsfeier (9. Mai, beginnt um ~19 Uhr)",
-			    optionPreWedBoat: "Vorhochzeits-Bootstour (9. Mai, beginnt um ~14 Uhr)",
-			    optionPreWedding: "Hochzeitszeremonie (10. Mai, um ~14 Uhr)",
+			    optionPreWedParty: "Vorhochzeitsfeier (09.05.2025)",
+			    optionPreWedBoat: "Vorhochzeits-Bootstour (09.05.2025)",
+			    optionWedding: "Hochzeitszeremonie (10.05.2025)",
+				optionBrunch: 'Brunch (11.05.2025)',
 			};
 			var pt_br_language_strings = {
 			    remove: "Remover",
 			    firstName: "Primeiro Nome",
 			    lastName: "Sobrenome",
 			    email: "E-mail",
+				phone: 'WhatsApp',
 			    eventSelect: "Selecione o Evento",
 			    attendee: "Participante",
-			    notAttending: "Não comparecendo",
-			    optionPreWedParty: "Festa Pré-Casamento (9 de maio, começa às ~19h)",
-			    optionPreWedBoat: "Passeio de Barco Pré-Casamento (9 de maio, começa às ~14h)",
-			    optionPreWedding: "Cerimônia de Casamento (10 de maio, às ~14h)",
+			    notAttending: "Não comparecerei",
+			    optionPreWedParty: "Festa pré-casamento (09.05.2025)",
+			    optionPreWedBoat: "Passeio de barco (09.05.2025)",
+			    optionWedding: "Cerimônia de casamento (10.05.2025)",
+				optionBrunch: 'Café da manhã (11.05.2025)',
 			};
 
 			languageStrings = window.language ==='en'? en_language_strings : window.language ==='de'? de_language_strings:  pt_br_language_strings;
@@ -125,6 +133,10 @@
 				<label for="email-${attendeeCount}">${languageStrings["email"]}:</label>
 				<input type="email" name="attendees[${attendeeCount}][email]" required>
 				</div>
+				<div class="attendee__variable">
+				<label for="phone-${attendeeCount}">${languageStrings["phone"]}:</label>
+				<input type="text" name="attendees[${attendeeCount}][phone]" />
+				</div>
 				<div class="attendee__variable select">
 				<p style="margin-bottom: 10px" id="selectEventLabel-${attendeeCount}">${languageStrings["eventSelect"]}:</p>
 				<label>
@@ -134,7 +146,10 @@
 				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" name="attendees[${attendeeCount}][event_preparty]" checked="checked" value="pre wedding sunset party" > ${languageStrings["optionPreWedParty"]}
 				</label>
 				<label>
-				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" name="attendees[${attendeeCount}][event_wedding]" checked="checked" value="wedding" > ${languageStrings["optionPreWedding"]}
+				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" name="attendees[${attendeeCount}][event_wedding]" checked="checked" value="wedding" > ${languageStrings["optionWedding"]}
+				</label>
+				<label>
+				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" name="attendees[${attendeeCount}][event_brunch]" checked="checked" value="Brunch" > ${languageStrings["optionBrunch"]}
 				</label>
 			<label>
 				<input type="checkbox" class="attendeeEventCheckbox-${attendeeCount}" id="checkboxNotAttending-${attendeeCount}" name="attendees[${attendeeCount}][event_notattending]" data-attendee="${attendeeCount}" value="not-attending" > ${languageStrings["notAttending"]}
@@ -200,20 +215,21 @@
 
 var getSelectedEvents = function(formData, index) {
     const selectedEvents = [];
-    const eventNames = ['event_wedding', 'event_preparty', 'event_boattour']; // Replace with actual event names
+    const eventNames = ['event_preparty', 'event_boattour', 'event_wedding', 'event_brunch']; // Replace with actual event names
     const eventValues = {
     	event_wedding:'Wedding', 
     	event_preparty: 'Pre-Wedding Party',
-    	event_boattour: 'Pre-Wedding Boat Tour'
+    	event_boattour: 'Pre-Wedding Boat Tour',
+    	event_brunch: 'Brunch'
     }
 
     eventNames.forEach(eventName => {
         if (formData.get(`attendees[${index}][${eventName}]`)) {
-            selectedEvents.push(eventName);
+            selectedEvents.push(eventValues[eventName]);
         }
     });
 
-    return selectedEvents.length > 0 ? selectedEvents.join(', ') : 'not attend';
+    return selectedEvents.length > 0 ? selectedEvents.join(', ') : 'not attending';
 }
 
 
@@ -225,6 +241,7 @@ var getSelectedEvents = function(formData, index) {
             firstName: formData.get(`attendees[${i}][firstName]`),
             lastName: formData.get(`attendees[${i}][lastName]`),
             email: formData.get(`attendees[${i}][email]`),
+            phone: formData.get(`attendees[${i}][phone]`),
             event: getSelectedEvents(formData, i),
             date: formData.get(`attendees[${i}][date]`)
         };
@@ -266,6 +283,10 @@ var getSelectedEvents = function(formData, index) {
     .then(data => {
         document.getElementById('confirmation-message').style.display = 'block';
         document.getElementById('rsvp-form').reset();
+        attendeeCount = 0;
+        const attendeeFields = document.getElementById('attendee-fields');
+        attendeeFields.innerHTML = '';
+        addAttendee();
     })
     .catch(error => {
         console.error('Error:', error);

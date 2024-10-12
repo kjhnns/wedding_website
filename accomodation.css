@@ -1,15 +1,14 @@
-
-
 div.accomodation-section {
 
     display: grid;
     place-items: center;
-/*    height: 100vh;*/
+    /*    height: 100vh;*/
     width: 100%;
     position: relative;
-    z-index: 1; /* Ensure this is above the pseudo-element */
+    z-index: 1;
+    /* Ensure this is above the pseudo-element */
 
-  /*  background-image: url('public/pattern_palms.jpg');
+    /*  background-image: url('public/pattern_palms.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,21 +24,17 @@ div.accomodation-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    
-    background-image: url('./public/ocean_bg.jpg');
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8; /* Set the desired opacity */
-    z-index: -1; /* Place it behind the content */
-    pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+    background-color: #003e29;
+    z-index: -1;
+    /* Place it behind the content */
+    pointer-events: none;
+    /* Ensure the background doesn't interfere with clicks */
 }
 
 div.wrapper {
-    border-radius: 8px;
-    background: #FFF;
-    opacity: 1;
+
+    color: #f9e8c5;
     padding: 0 50px;
     margin: 50px;
 
@@ -47,18 +42,21 @@ div.wrapper {
 
 
 .title h1 {
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 
 .three-column-section {
     display: grid;
-max-width: 1440px;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 5%; /* Space between the grid items */
+    max-width: 1440px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three equal columns */
+    gap: 5%;
+    /* Space between the grid items */
     padding: 0 5%;
     padding-bottom: 5%;
-/*    background-color: #f9f9f9; /* Background color of the section */*/
+    /*    background-color: #f9f9f9; /* Background color of the section */
+    */
 }
 
 .grid-item {
@@ -66,14 +64,16 @@ max-width: 1440px;
     height: auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: add a shadow for depth */
     text-align: center;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: rounded corners for the images */
+    border-radius: 8px;
+    /* Optional: rounded corners for the images */
     margin-bottom: 15px;
 }
 
@@ -104,7 +104,7 @@ max-width: 1440px;
 
 
 .grid-item a {
-/*    text-decoration: none;*/
+    /*    text-decoration: none;*/
     color: #000;
     font-weight: bold;
 }
@@ -118,46 +118,44 @@ max-width: 1440px;
 /* Responsive adjustments */
 @media (max-width: 1200px) {
     .three-column-section {
-        grid-template-columns: 1fr 1fr; /* Stack the grid items */
+        grid-template-columns: 1fr 1fr;
+        /* Stack the grid items */
     }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-/*
-    div.accomodation-section::before {
-        opacity: 1;
-    background-image: url('./public/ocean_bg2.jpg');
-    }*/
-/*
-    div.wrapper {
-        color: #fff;
+
+    .title h1 {
+        font-size: 2rem;
     }
-*/
+    
 
 
-div.wrapper {
-    border-radius: 0;
-    background: none;
-    opacity: 1;
-    padding: 0;
-    margin: 0;
 
-}
+    div.wrapper {
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+
+    }
 
 
     .recommendation {
         margin: 20px 0;
     }
+
     .three-column-section {
-        grid-template-columns: 1fr; /* Stack the grid items */
+        grid-template-columns: 1fr;
+        /* Stack the grid items */
         height: auto;
-        gap:0;
-        padding:0;
+        gap: 0;
+        padding: 0;
     }
 
     .grid-item {
-        margin-bottom: 20px; /* Add space between stacked items */
+        margin-bottom: 20px;
+        /* Add space between stacked items */
         border-radius: 0;
     }
 }

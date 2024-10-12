@@ -1,7 +1,7 @@
-(function(language) {
+(function (language) {
 
 
-var string__english = `
+    var string__english = `
 <div class='title'><h1><span id="string__traveltips__headline"></span></h1></div>
 
 
@@ -10,32 +10,41 @@ var string__english = `
 <p>We are thrilled you will join us for our wedding celebration in Angra dos Reis, Rio de Janeiro, Brazil! This document provides helpful information for our first-time visitors from Europe, offering guidance on travel logistics and cultural expectations.</p>
 <p>
 
-
-<span style="font-weight: bold;">When:</span> The wedding is on Saturday, May 10th. From Friday to Sunday, we have the location and will provide a program.</p>
-<p>
-
-<span style="font-weight: bold;">Where:</span> The exact location of our wedding is the private beach called Praia da Jaca (<a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Google Maps</a>) in the city of Angra dos Reis, which is three hours from Rio de Janeiro. It is located in the Frade condominium, where we rented two beach houses.</p>
+<span style="font-weight: bold;">Where:</span> The <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">wedding location</a> is in the city of Angra dos Reis at Condominio Porto Frade (a gated community), which is 3h drive from Rio de Janeiro or 5h drive from Sao Paulo.</p>
 
 
 <hr/>
 
 <div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">Things to do before your trip</span></button>
+<button class="collapsible">Things to do before your trip</button>
 <div class="content">
 <ul>
-
-
+<li>
+<span style="font-weight: bold;">Passport:</span> Please make sure your passport is up to date and at least 6 months before expiring. Some countries/nationalities require a visa to enter Brazil, check with your local Brazilian embassy or <a href="https://www.gov.br/mre/pt-br/consulado-atlanta/english/visas/visa-requirements-by-country">Brazil's official visa information page</a>. Europeans do not need a visa for stays up to 90 days.</li>
 
 <li>
-<span style="font-weight: bold;">Passport:</span> Please make sure your passport is up to date and not close to expiring.</li>
-
+<span style="font-weight: bold;">Vaccines:</span>
+    <ul>
+        <li><span style="font-weight: bold;">Yellow fever:</span> Easy to get at your local pharmacy and a good precaution, though the risk is considered low in Rio state, but important if you travel to the north of the country.</li>
+        <li><span style="font-weight: bold;">Dengue:</span> Cases of dengue have increased in recent years. A new dengue vaccine is available and the current recommendation is to get vaccinated if you had dengue in the past. In any case, we recommend checking with your doctor.</li>
+    </ul>
+</li>
 <li>
-<span style="font-weight: bold;">Yellow fever vaccine:</span> Easy to get at your local pharmacy and a good precaution, though the risk is considered low in Rio state.</li>
+<span style="font-weight: bold;">Travel insurance:</span> Although it's not mandatory, we recommend taking out travel insurance for emergency medical coverage.
+</li>
 <li>
-
-<span style="font-weight: bold;">Dengue vaccine:</span> Cases of dengue have increased in recent years. A new dengue vaccine is available. Neither Camila nor Johannes are currently vaccinated, but they are considering it.</li>
-
-
+<span style="font-weight: bold;">Travel adapter and voltage:</span> Brazil uses type N plugs (the one that has two round pins and a grounding pin, similar to Switzerland). The majority of the country operates on 110/127V voltage supply.
+</li>
+<li>
+<span style="font-weight: bold;">What to pack:</span>
+    <ul>
+        <li>Beachwear;</li>
+        <li>Mosquito repellent;</li>
+        <li>Sunscreen (we recommend at least 30+ SPF);</li>
+        <li>A light jacket or sweater, as air conditioning in cars and venues can be cold;</li>
+        <li>Light and breathable clothes.</li>
+    </ul>
+</li>
 </ul>
 </div></div>
 
@@ -44,7 +53,25 @@ var string__english = `
 <hr/>
 
 <div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">How to get to the wedding location</span></button>
+<button class="collapsible">How to get to Brazil</button>
+<div class="content">
+<p><b>Comfortable options: </b></p>
+<ul>
+<li>Direct flight from Amsterdam to Rio or Sao Paulo (KLM);</li>
+<li>Direct flight from Frankfurt to Rio or Sao Paulo (Lufthansa);</li>
+<li>Direct flight from Zurich to Sao Paulo (Swiss);</li>
+</ul>
+<p><b>Economical options: </b>indirect flights with TAP with a layover in Lisbon or with ITA with a layover in Rome.</p>
+<ul>
+<li>Example: flying from Frankfurt to Rio with Tap Portugal from May 4th to May 11th, 2025, costs <a href="https://drive.google.com/file/d/1obu_AbuFR6L530N1nb8M-3vXtWxhgTex/view?usp=sharing">EUR441</a> per person (last checked: Jun 15, 2024).
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+
+<div class="collapsible-group">
+<button class="collapsible">How to get to the wedding location</button>
 <div class="content">
 
 <p>The closest airport to Angra dos Reis is Galeão International Airport (GIG) in Rio de Janeiro. From Rio, it is a <a href="https://maps.app.goo.gl/VCh3K3hwxBjPXTu1A">three-hour car ride</a> to Angra dos Reis, where you have the option to travel by:</p>
@@ -54,29 +81,14 @@ var string__english = `
 
 
 <li>
-Hotel shuttle service from the Airport (see recommended Hotels)
-
-
-<li>Boat (about EUR60 pPerson, <a href="https://www.tripadvisor.ch/AttractionProductReview-g303506-d19530717-Angra_dos_Reis_and_Ilha_Grande_Boat_Ride_from_Rio_Lunch_and_Transport-Rio_de_Janei.html">example</a> you will have to book a boat trip that then takes you to the Angra where you can leave the boat)</li>
-<li>
-Rental car: we recommend Movida (location in <a href="https://g.co/kgs/fQ7r7BE">Rio de Janeiro</a>), and recommend to not rent from Unidas (they have a policy that foreigners need to book 1 month in advance)</li>
-
-
-
-</ul>
-
-
-<h3>Recommended flights to Rio from Europe </h3>
-<p>Comfortable options: </p>
-<ul>
-<li>Direct flight from Amsterdam to Rio (KLM)</li>
-<li>Direct flight from Frankfurt to Rio (Lufthansa)</li>
-<li>Direct flight from Zurich to Rio (Swiss)</li>
-</ul>
-<p>Cheap options: indirect flights with TAP stopping in Lisbon, ITA stopping in Rome</p>
-<ul>
-<li>For example, flying from Frankfurt to Rio with Tap Portugal from May 4th to May 11th, 2025, costs <a href="https://drive.google.com/file/d/1obu_AbuFR6L530N1nb8M-3vXtWxhgTex/view?usp=sharing">EUR441</a> per person (last checked: Jun 15, 2024).
+<b>Rental car:</b> We recommend Movida (location in <a href="https://g.co/kgs/fQ7r7BE">Rio de Janeiro</a>), and recommend not renting from Unidas (they have a policy that requires foreigners to book 1 month in advance).
 </li>
+<li><b>Boat:</b> About EUR60 per person. <a href="https://www.tripadvisor.ch/AttractionProductReview-g303506-d19530717-Angra_dos_Reis_and_Ilha_Grande_Boat_Ride_from_Rio_Lunch_and_Transport-Rio_de_Janei.html">Here's an example</a>. You will have to book a boat trip that takes you to Angra, where you can disembark.
+</li>
+<li><b>Shuttle services:</b> We are currently looking into offering shuttle services from both Rio de Janeiro and São Paulo to the wedding location. We will reach out soon via the email provided in the RSVP.</li>
+
+
+
 </ul>
 
 
@@ -87,32 +99,34 @@ Rental car: we recommend Movida (location in <a href="https://g.co/kgs/fQ7r7BE">
 <hr/>
 
 <div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">Things to consider for your travels in Brazil</span></button>
+<button class="collapsible">Things to consider for your travels in Brazil</button>
 <div class="content">
 <ul>
 
 <li>
-<span style="font-weight: bold;">Currency & Money:</span> The Brazilian currency is called the Real (plural: Reais). You do not need to withdraw any cash; we recommend using credit cards or phone payments. In Brazil, you can pay for almost anything directly by card, even a coconut on the beach.
-
-
-.</li>
-
-
+<span style="font-weight: bold;">Currency & Money</span><br>
+The Brazilian currency is Real (BRL) and the current conversion rate is about 1 EUR = 6 BRL. You do not need to carry any cash with you, you can pay for almost anything by card, even a coconut at the beach.
+</li>
+<br>
 
 <li>
 
-<span style="font-weight: bold;">Only a small percentage speaks English:</span> 
+<span style="font-weight: bold;">Only a small percentage speaks English</span><br> 
 Brazilian Portuguese is a Latin language and very close to Spanish, Italian, and French. If you speak any of those languages, you should be able to navigate Brazil very easily. If you are relying on English, then use mobile phone apps to navigate the cities. Tools that are helpful are Uber, Google Maps, Airbnb, and for delivering food you should use iFood or Rappi.
 
 </li>
+<br>
 <li>
 
-<span style="font-weight: bold;">Safety and security:</span> The answer depends on what you want to experience. In Brazil there is a massive gap between the rich and the poor. Most people struggle to live a life regarding the most basic needs. Therefore, you should watch out for expensive jewelry and phones when you are not in a wealthy city area.
+<span style="font-weight: bold;">Safety and Security</span><br>
+Rio and Sao Paulo can absolutely be a safe destination for travelers, as long as you stick to the safer areas and keep your wits about you. Just like in any major city, it's important to take precautions. Stay in well-populated and well-lit areas, avoid displaying valuable items such as jewelry, and be cautious at night.
 <ul>
-<li>Sao Paulo is the commercial and financial center of Brazil. The closer you get to the city center, the more expensive and rich it becomes. You find the most expensive restaurants and the most exclusive shopping centers. In those parts of the city, there is a different level of police presence and protection. On the other hand, the closer you get to the old downtown SP or the city's outskirts, you have to be careful when walking the streets. Here it's recommended to travel with Uber from place to place and not take out your phone in public.</li>
-<li>Rio de Janeiro is the most famous tourist destination of Brazil. There are more pickpockets, and the Favelas (Ghettos) are spread throughout the city. You can walk from a safe neighborhood straight into a Favela without much of a transition. This can be dangerous, and you should try to stay out of the Favelas.</li>
-<li>In general, try to not walk home when it's dark. Do not wave around your phone in public. And try to stay out of dangerous neighborhoods.</li>
+<br>
 
+<li>
+<b>What are the safest areas to stay in Rio de Janeiro?</b><br>
+The safest areas to stay in Rio de Janeiro are Ipanema and Copacabana. It's perfectly safe to walk around during the day (exercising normal precautions), though like anywhere in Rio, you might want to take a taxi or Uber at night. In general, try to not walk home when it's dark. Do not wave around your phone in public. And try to stay out of dangerous neighborhoods.
+</li>
 </ul>
 </li>
 
@@ -124,7 +138,7 @@ Brazilian Portuguese is a Latin language and very close to Spanish, Italian, and
 <hr/>
 
 <div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">Recommendations for your Trip</span></button>
+<button class="collapsible">Recommendations for your Trip</button>
 <div class="content">
 <p><b>One week (example 4th to 11th of May): Rio & Angra dos Reis:</b> If you consider staying for one week, we recommend the following travel agenda:</p>
 
@@ -164,134 +178,115 @@ Brazilian Portuguese is a Latin language and very close to Spanish, Italian, and
 </div>
 `;
 
-
 var string__german = `
 <div class='title'><h1><span id="string__traveltips__headline"></span></h1></div>
+
 <div class="info-section">
-<p>Wir freuen uns riesig, dass ihr bei unserer Hochzeit in Angra dos Reis, Rio de Janeiro, Brasilien, dabei seid! Dieses Dokument enthält hilfreiche Informationen für unsere europäischen Gäste, die Brasilien zum ersten Mal besuchen. Es geht um Reiselogistik und kulturelle Besonderheiten.</p>
-<p>
+<p>Wir freuen uns sehr, dass ihr zu unserer Hochzeitsfeier in Angra dos Reis, Rio de Janeiro, Brasilien, kommt! Dieses Dokument enthält hilfreiche Informationen für unsere Gäste, die zum ersten Mal aus Europa anreisen, mit Tipps zu Reiselogistik und kulturellen Erwartungen.</p>
 
-
-<span style="font-weight: bold;">Wann:</span> Die Hochzeit findet am Samstag, den 10. Mai, statt. Von Freitag bis Sonntag haben wir die Location gebucht und werden ein Programm bereitstellen.</p>
-<p>
-
-<span style="font-weight: bold;">Wo:</span> Die genaue Location unserer Hochzeit ist der Privatstrand Praia da Jaca (<a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Google Maps</a>) in der Stadt Angra dos Reis, etwa drei Stunden von Rio de Janeiro entfernt. Er befindet sich im Frade-Wohnkomplex, wo wir zwei Strandhäuser gemietet haben.</p>
-
+<p><span style="font-weight: bold;">Wo:</span> Die <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Hochzeitslocation</a> befindet sich in der Stadt Angra dos Reis im Condominio Porto Frade (eine geschlossene Wohnanlage), etwa 3 Stunden Autofahrt von Rio de Janeiro oder 5 Stunden von São Paulo entfernt.</p>
 
 <hr/>
 
 <div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">Was ihr vor der Reise erledigen solltet</span></button>
+<button class="collapsible">Vor der Reise zu erledigen</button>
 <div class="content">
 <ul>
-
-
-
-<li>
-<span style="font-weight: bold;">Reisepass:</span> Bitte stellt sicher, dass euer Reisepass gültig ist und nicht bald abläuft.</li>
-
-<li>
-<span style="font-weight: bold;">Gelbfieberimpfung:</span> Leicht in der Apotheke erhältlich und eine gute Vorsichtsmaßnahme, obwohl das Risiko im Bundesstaat Rio als gering eingestuft wird.</li>
-<li>
-
-<span style="font-weight: bold;">Dengue-Impfung:</span> Die Fälle von Dengue haben in den letzten Jahren zugenommen. Eine neue Dengue-Impfung ist verfügbar. Weder Camila noch Johannes sind derzeit geimpft, aber sie ziehen es in Betracht.</li>
-
-
-</ul>
-</div></div>
-
-
-
-<hr/>
-
-<div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">Wie ihr zur Hochzeitslocation kommt</span></button>
-<div class="content">
-
-<p>Der nächstgelegene Flughafen zu Angra dos Reis ist der Galeão International Airport (GIG) in Rio de Janeiro. Von Rio aus sind es <a href="https://maps.app.goo.gl/VCh3K3hwxBjPXTu1A">drei Stunden mit dem Auto</a> nach Angra dos Reis. Dort habt ihr folgende Reisemöglichkeiten:</p>
-
-<ul>
-
-
-
-<li>
-Shuttle-Service vom Flughafen zum Hotel (siehe empfohlene Hotels)
-
-
-<li>Boot (ca. 60 EUR pro Person, <a href="https://www.tripadvisor.ch/AttractionProductReview-g303506-d19530717-Angra_dos_Reis_and_Ilha_Grande_Boat_Ride_from_Rio_Lunch_and_Transport-Rio_de_Janei.html">Beispiel</a> ihr müsst eine Bootsfahrt buchen, die euch dann nach Angra bringt, wo ihr das Boot verlassen könnt)</li>
-<li>
-Mietwagen: Wir empfehlen Movida (Standort in <a href="https://g.co/kgs/fQ7r7BE">Rio de Janeiro</a>) und raten davon ab, bei Unidas zu mieten (sie haben die Regel, dass Ausländer einen Monat im Voraus buchen müssen)</li>
-
-
-
-</ul>
-
-
-<h3>Empfohlene Flüge nach Rio von Europa</h3>
-<p>Komfortable Optionen: </p>
-<ul>
-<li>Direktflug von Amsterdam nach Rio (KLM)</li>
-<li>Direktflug von Frankfurt nach Rio (Lufthansa)</li>
-<li>Direktflug von Zürich nach Rio (Swiss)</li>
-</ul>
-<p>Günstige Optionen: Indirekte Flüge mit TAP über Lissabon, ITA über Rom</p>
-<ul>
-<li>Zum Beispiel: Flug von Frankfurt nach Rio mit Tap Portugal vom 4. bis 11. Mai 2025 für <a href="https://drive.google.com/file/d/1obu_AbuFR6L530N1nb8M-3vXtWxhgTex/view?usp=sharing">441 EUR</a> pro Person (zuletzt geprüft am 15. Juni 2024).
+<li><span style="font-weight: bold;">Reisepass:</span> Bitte stellt sicher, dass euer Reisepass noch mindestens 6 Monate gültig ist. Einige Länder benötigen ein Visum für Brasilien, bitte erkundigt euch bei der brasilianischen Botschaft oder <a href="https://www.gov.br/mre/pt-br/consulado-atlanta/english/visas/visa-requirements-by-country">Brasiliens offizieller Visa-Infoseite</a>. Europäer benötigen für einen Aufenthalt von bis zu 90 Tagen kein Visum.</li>
+<li><span style="font-weight: bold;">Impfungen:</span>
+    <ul>
+        <li><span style="font-weight: bold;">Gelbfieber:</span> Leicht in der Apotheke erhältlich, eine gute Vorsichtsmaßnahme, auch wenn das Risiko im Bundesstaat Rio gering ist, aber wichtig, wenn ihr in den Norden reist.</li>
+        <li><span style="font-weight: bold;">Dengue:</span> Dengue-Fälle haben in den letzten Jahren zugenommen. Eine neue Impfung ist verfügbar, und die Empfehlung ist, sich impfen zu lassen, wenn man schon einmal Dengue hatte. Fragt am besten bei eurem Arzt nach.</li>
+    </ul>
 </li>
-</ul>
-
-
-</div></div>
-
-
-
-<hr/>
-
-<div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">Dinge, die ihr bei eurer Reise in Brasilien beachten solltet</span></button>
-<div class="content">
-<ul>
-<li><span style="font-weight: bold;">Währung & Geld:</span> Die brasilianische Währung heißt Real (Plural: Reais). Ihr müsst kein Bargeld abheben; wir empfehlen die Nutzung von Kreditkarten oder mobilen Zahlungen. In Brasilien könnt ihr fast alles direkt mit Karte bezahlen, sogar eine Kokosnuss am Strand.</li>
-<li>
-<span style="font-weight: bold;">Nur ein kleiner Prozentsatz spricht Englisch:</span> 
-Das brasilianische Portugiesisch ist eine romanische Sprache und sehr nah an Spanisch, Italienisch und Französisch. Wenn ihr eine dieser Sprachen sprecht, solltet ihr euch in Brasilien gut zurechtfinden. Wenn ihr auf Englisch angewiesen seid, nutzt mobile Apps zur Orientierung. Hilfreiche Tools sind Uber, Google Maps, Airbnb und für Essenslieferungen iFood oder Rappi.
-</li>
-<li>
-<span style="font-weight: bold;">Sicherheit:</span> Die Antwort hängt davon ab, was ihr erleben möchtet. In Brasilien gibt es eine massive Kluft zwischen Arm und Reich. Die meisten Menschen kämpfen damit, ihre Grundbedürfnisse zu decken. Daher solltet ihr in ärmeren Gegenden auf teuren Schmuck und Handys achten.
-<ul>
-<li>Sao Paulo ist das kommerzielle und finanzielle Zentrum Brasiliens. Je näher ihr dem Stadtzentrum kommt, desto teurer und reicher wird es. Hier findet ihr die teuersten Restaurants und die exklusivsten Einkaufszentren. In diesen Teilen der Stadt gibt es eine höhere Polizeipräsenz und mehr Sicherheit. Je näher ihr jedoch dem alten Stadtzentrum von SP oder den Randbezirken der Stadt kommt, desto vorsichtiger solltet ihr beim Spaziergang sein. Hier wird empfohlen, mit Uber von Ort zu Ort zu fahren und das Handy nicht in der Öffentlichkeit herauszuholen.</li>
-<li>Rio de Janeiro ist das bekannteste Touristenziel Brasiliens. Es gibt mehr Taschendiebe, und die Favelas (Slums) sind über die ganze Stadt verteilt. Ihr könnt von einem sicheren Viertel direkt in eine Favela gelangen, ohne viel Übergang. Das kann gefährlich sein, und ihr solltet versuchen, die Favelas zu meiden.</li>
-<li>Generell: Versucht, nicht im Dunkeln nach Hause zu gehen. Schwenkt nicht mit eurem Handy in der Öffentlichkeit herum. Und versucht, gefährliche Stadtteile zu meiden.</li>
-</ul>
+<li><span style="font-weight: bold;">Reiseversicherung:</span> Obwohl nicht verpflichtend, empfehlen wir eine Reiseversicherung mit Notfall-Krankenabdeckung.</li>
+<li><span style="font-weight: bold;">Steckdosenadapter und Spannung:</span> Brasilien nutzt Typ-N-Stecker (zwei runde Pins und ein Erdungspin, ähnlich wie in der Schweiz). Die Mehrheit des Landes hat eine Spannung von 110/127V.</li>
+<li><span style="font-weight: bold;">Packliste:</span>
+    <ul>
+        <li>Badebekleidung;</li>
+        <li>Mückenschutz;</li>
+        <li>Sonnencreme (mindestens SPF 30+);</li>
+        <li>Eine leichte Jacke oder einen Pullover, da Klimaanlagen in Autos und Räumen oft kühl sind;</li>
+        <li>Leichte und atmungsaktive Kleidung.</li>
+    </ul>
 </li>
 </ul>
 </div></div>
+
 <hr/>
+
 <div class="collapsible-group">
-<button class="collapsible"><span style="text-decoration:underline;">Empfehlungen für eure Reise</span></button>
+<button class="collapsible">Anreise nach Brasilien</button>
 <div class="content">
-<p><b>Eine Woche (zum Beispiel 4. bis 11. Mai): Rio & Angra dos Reis:</b> Wenn ihr plant, eine Woche zu bleiben, empfehlen wir folgende Reiseroute:</p>
+<p><b>Komfortable Optionen:</b></p>
 <ul>
-<li>Ankunft am Sonntag, 4. Mai, in Rio de Janeiro, wo ihr bis Donnerstag, 8. Mai, bleiben solltet, um das beliebteste Reiseziel Brasiliens zu erkunden. Wir empfehlen Rio, da ihr hier mit der Sprache besser zurechtkommt, da es touristischer ist. Es gibt viele Dinge zu tun, wie den Besuch der Christusstatue, die Gondelfahrt auf den Zuckerhut und einen Spaziergang am Strand von Copacabana.</li>
-<li>Am Freitag fahrt ihr dann nach Praia da Jaca mit Uber oder Mietwagen und kehrt nach der Hochzeit wieder nach Rio zurück, um von dort aus weiterzureisen.</li>
+<li>Direktflug von Amsterdam nach Rio oder São Paulo (KLM);</li>
+<li>Direktflug von Frankfurt nach Rio oder São Paulo (Lufthansa);</li>
+<li>Direktflug von Zürich nach São Paulo (Swiss);</li>
 </ul>
-<p><b>Zwei Wochen (zum Beispiel 4. bis 18. Mai): Rio bis São Paulo Küsten-Roadtrip:</b> Diese Route ist für Leute, die alleine mit dem Auto reisen und flexibel bleiben wollen. Die Küstenlinie zwischen Rio und São Paulo ist gut ausgebaut. Wir haben ähnliche Touren schon mehrfach gemacht. Entlang der Küste gibt es viele sehenswerte Orte. Die Route ist dieselbe wie oben beschrieben. Wir empfehlen, ein Auto zu mieten. Startet in Rio und plant mehrere Stopps entlang der Küste. Zum Beispiel könntet ihr Folgendes machen:</p>
+<p><b>Günstige Optionen:</b> indirekte Flüge mit TAP über Lissabon oder mit ITA über Rom.</p>
 <ul>
-<li>Nach der Hochzeit fahrt ihr nach Paraty, einer alten Stadt mit wunderschöner Kulisse. Wir waren schon zweimal in Paraty (<a href="https://johannesklumpe.com/i-love-paraty-rj/">unser letzter Besuch</a>), und es ist ein wunderbarer Ort. Bleibt dort drei Tage, um die vielen Attraktionen zu erkunden: Besucht eine Cachaça-Destillerie, macht eine Bootstour zu den nahegelegenen Inseln, erkundet das historische Stadtzentrum und wandert zu einem Wasserfall. Paraty ist sehr touristisch, daher werdet ihr viele englischsprachige Leute treffen.</li>
-<li>Entlang der Küste solltet ihr weitere Stopps wie Ubatuba, eine berühmte Surf- und Strandstadt, in Betracht ziehen. Für ein entwickelteres Ziel fahrt nach Riviera de São Lourenço. Auch einen Besuch auf der Insel Ilhabela, einem wunderschönen Ort, solltet ihr in Erwägung ziehen, aber packt unbedingt Mückenschutz ein.</li>
+<li>Beispiel: Flug von Frankfurt nach Rio mit Tap Portugal vom 4. bis 11. Mai 2025, für <a href="https://drive.google.com/file/d/1obu_AbuFR6L530N1nb8M-3vXtWxhgTex/view?usp=sharing">EUR 441</a> pro Person (Stand: 15. Juni 2024).</li>
 </ul>
-<p>Wenn ihr länger in Brasilien bleiben möchtet, sind das Orte, die wir euch empfehlen:
-<ul>
-<li>Besucht Rio de Janeiro: Übernachtet in Copacabana und erkundet die lebendige Stadt.</li>
-<li>Besucht São Paulo: Erlebt die pulsierende Metropole mit ihrer vielfältigen Kultur.</li>
-<li>Mietet ein Auto und fahrt entlang der Küste zwischen Rio und São Paulo: Besucht mehrere atemberaubende Strände.</li>
-<li>Besucht Fortaleza: Genießt die wunderschönen Strände und die lebhafte Atmosphäre.</li>
-<li>Besucht Lençóis Maranhenses: Fahrt nach São Luís und weiter nach Barreirinhas, um die einzigartigen Sanddünen und Lagunen zu sehen.</li>
-<li>Besucht die Iguazu-Wasserfälle: Bewundert die atemberaubenden Wasserfälle an der Grenze zu Argentinien.</li>
-</ul>
-</p>
 </div>
 </div>
+
+<hr/>
+
+<div class="collapsible-group">
+<button class="collapsible">Anreise zur Hochzeitslocation</button>
+<div class="content">
+<p>Der nächstgelegene Flughafen zu Angra dos Reis ist der Internationale Flughafen Galeão (GIG) in Rio de Janeiro. Von dort sind es <a href="https://maps.app.goo.gl/VCh3K3hwxBjPXTu1A">drei Stunden mit dem Auto</a> nach Angra dos Reis. Folgende Reisemöglichkeiten stehen zur Verfügung:</p>
+<ul>
+<li><b>Mietwagen:</b> Wir empfehlen Movida (Standort in <a href="https://g.co/kgs/fQ7r7BE">Rio de Janeiro</a>), und raten davon ab, bei Unidas zu mieten (sie verlangen von Ausländern eine Buchung einen Monat im Voraus).</li>
+<li><b>Boot:</b> Etwa EUR 60 pro Person. <a href="https://www.tripadvisor.ch/AttractionProductReview-g303506-d19530717-Angra_dos_Reis_and_Ilha_Grande_Boat_Ride_from_Rio_Lunch_and_Transport-Rio_de_Janei.html">Hier ein Beispiel</a>. Ihr müsst eine Bootsfahrt nach Angra buchen, wo ihr dann aussteigen könnt.</li>
+<li><b>Shuttle-Services:</b> Wir prüfen derzeit die Möglichkeit, Shuttle-Services von Rio de Janeiro und São Paulo zur Hochzeitslocation anzubieten. Weitere Informationen folgen per E-Mail nach der RSVP.</li>
+</ul>
+</div></div>
+
+<hr/>
+
+<div class="collapsible-group">
+<button class="collapsible">Tipps für eure Reise in Brasilien</button>
+<div class="content">
+<ul>
+<li><span style="font-weight: bold;">Währung & Geld:</span><br>
+Die Währung in Brasilien ist der Real (BRL), und der aktuelle Wechselkurs beträgt etwa 1 EUR = 6 BRL. Bargeld ist kaum nötig, da fast alles mit Karte bezahlt werden kann, selbst eine Kokosnuss am Strand.</li>
+<br>
+<li><span style="font-weight: bold;">Nur wenige sprechen Englisch:</span><br> 
+Brasilianisches Portugiesisch ist eine romanische Sprache und ähnelt Spanisch, Italienisch und Französisch. Wenn ihr eine dieser Sprachen sprecht, werdet ihr euch gut zurechtfinden. Mit Englisch ist es ratsam, Apps wie Uber, Google Maps, Airbnb oder iFood/Rappi für Essenslieferungen zu nutzen.</li>
+<br>
+<li><span style="font-weight: bold;">Sicherheit:</span><br>
+Rio und São Paulo können sicher für Reisende sein, solange ihr in sicheren Gegenden bleibt und Vorsicht walten lasst. Wie in jeder großen Stadt solltet ihr wertvolle Gegenstände nicht offen tragen, vor allem nachts vorsichtig sein und beleuchtete, belebte Gegenden bevorzugen.
+<ul>
+<br>
+<li><b>Welche Gegenden sind in Rio de Janeiro am sichersten?</b><br>
+Die sichersten Gegenden zum Übernachten sind Ipanema und Copacabana. Tagsüber ist es sicher, dort herumzulaufen, aber nehmt nachts lieber ein Taxi oder Uber. Vermeidet gefährliche Viertel und winkt nicht mit eurem Handy in der Öffentlichkeit.</li>
+</ul>
+</li>
+</ul>
+</div></div>
+
+<hr/>
+
+<div class="collapsible-group">
+<button class="collapsible">Empfehlungen für eure Reise</button>
+<div class="content">
+<p><b>Eine Woche (Beispiel 4. bis 11. Mai): Rio & Angra dos Reis:</b> Wenn ihr eine Woche bleibt, empfehlen wir folgendes Programm:</p>
+<ul>
+<li>Ankunft am Sonntag, 4. Mai, in Rio de Janeiro, und Aufenthalt bis Donnerstag, 8. Mai, um die Stadt zu erkunden. Rio ist eine touristische Stadt, wo ihr leichter zurechtkommt und viele Attraktionen wie den Zuckerhut, die Christusstatue und den Copacabana-Strand entdecken könnt.</li>
+<li>Am Freitag reist ihr nach Praia da Jaca mit Uber oder Mietwagen und kehrt nach der Hochzeit nach Rio zurück, um den Rückflug anzutreten.</li>
+</ul>
+
+<p><b>Zwei Wochen (Beispiel 4. bis 18. Mai): Küsten-Roadtrip von Rio nach São Paulo:</b> Diese Route eignet sich für Reisende, die flexibel bleiben möchten. Die Küstenstraße zwischen Rio und São Paulo ist gut ausgebaut und bietet viele Zwischenstopps.</p>
+<ul>
+<li>Nach der Hochzeit fahrt ihr nach Paraty, einer wunderschönen, historischen Stadt. Verbringt drei Tage dort und macht eine Bootstour, besichtigt eine Cachaça-Destillerie oder wandert zu einem Wasserfall. Paraty ist touristisch und viele sprechen Englisch.</li>
+<li>Entlang der Küste empfehlen wir weitere Stopps wie Ubatuba oder Ilhabela, eine traumhafte Insel – vergesst nicht Mückenschutz!</li>
+</ul>
+</div></div>
+
+<h2></h2>
+
 </div>
 `;
 
@@ -299,16 +294,17 @@ Das brasilianische Portugiesisch ist eine romanische Sprache und sehr nah an Spa
 
 
 
-    // Condition to load the HTML based on language parameter
-var content_container = document.querySelector('#travel_tips__content');
 
-if (content_container) {
-  if (language === 'en') {
-     content_container.innerHTML = string__english;
- } else if (language === 'de') {
-     content_container.innerHTML = string__german;
- } else {
-     content_container.innerHTML = string__english;
- }
-}
+    // Condition to load the HTML based on language parameter
+    var content_container = document.querySelector('#travel_tips__content');
+
+    if (content_container) {
+        if (language === 'en') {
+            content_container.innerHTML = string__english;
+        } else if (language === 'de') {
+            content_container.innerHTML = string__german;
+        } else {
+            content_container.innerHTML = string__english;
+        }
+    }
 })(window.language);

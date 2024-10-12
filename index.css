@@ -1,8 +1,4 @@
-
-
-
-
-div.quote  {
+div.quote {
     margin: 10% 20%;
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -10,7 +6,7 @@ div.quote  {
     display: flex;
     flex-direction: column;
     color: #5C4033;
-        text-align: justify;
+    text-align: justify;
 
 }
 
@@ -20,7 +16,7 @@ div.quote ul {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    div.quote  {
+    div.quote {
         font-size: 1.2rem;
         line-height: 2rem;
         padding: 4rem 0;
@@ -34,12 +30,13 @@ div.quote-section {
 
     display: grid;
     place-items: center;
-/*    height: 100vh;*/
-width: 100%;
-position: relative;
-z-index: 1; /* Ensure this is above the pseudo-element */
+    /*    height: 100vh;*/
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* Ensure this is above the pseudo-element */
 
-  /*  background-image: url('public/pattern_palms.jpg');
+    /*  background-image: url('public/pattern_palms.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,13 +53,16 @@ div.quote-section::before {
     bottom: 0;
     background-image: url('https://camilajohannes.com/public/sand.jpeg');
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    opacity: 0.6; /* Set the desired opacity */
-    z-index: -1; /* Place it behind the content */
-    pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+    opacity: 0.6;
+    /* Set the desired opacity */
+    z-index: -1;
+    /* Place it behind the content */
+    pointer-events: none;
+    /* Ensure the background doesn't interfere with clicks */
 }
 
 
@@ -71,7 +71,7 @@ div.quote-section::before {
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-    div.quote  {
+    div.quote {
         margin: 10% 20px;
     }
 }
@@ -85,16 +85,23 @@ div.quote-section::before {
 
 
 .main-element {
-    background: white; /* Background color of the centered element */
-    padding: 20px; /* Adjust padding as needed */
-/*    border-radius: 8px; /* Optional: rounded corners */*/
-/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for a nice effect */*/
-max-width: 90%; /* Ensure it fits within smaller viewports */
-width: 400px; /* Fixed width, adjust as needed */
-text-align: center; /* Optional: center text inside */
+    background: white;
+    /* Background color of the centered element */
+    padding: 20px;
+    /* Adjust padding as needed */
+    /*    border-radius: 8px; /* Optional: rounded corners */
+    */
+    /*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for a nice effect */
+    */ max-width: 90%;
+    /* Ensure it fits within smaller viewports */
+    width: 400px;
+    /* Fixed width, adjust as needed */
+    text-align: center;
+    /* Optional: center text inside */
 }
 
-body, html {
+body,
+html {
     margin: 0;
     height: 100%;
 }
@@ -105,7 +112,7 @@ body, html {
     height: 100vh;
     width: 100%;
     position: relative;
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
 
 }
 
@@ -117,7 +124,7 @@ video {
     top: 0;
     left: 0;
     z-index: 1;
-    filter: blur(2px); 
+    filter: blur(2px);
 
 }
 
@@ -152,11 +159,20 @@ video {
 
 
 .foreground-text h1 {
+    
+font-family: "Cinzel", serif; 
+text-transform: capitalize;
+letter-spacing: 0.1em;
+    
+    
     font-size: 5.5rem;
+    letter-spacing: 0.1em;
     color: #fff;
     text-align: center;
     margin-top: 20px;
     font-weight: 100;
+
+
 }
 
 .foreground-text a {
@@ -169,25 +185,34 @@ video {
 .outlined-button {
     display: inline-block;
     padding: 10px 20px;
-    color: #FFF; /* Text color */
-    text-decoration: none; /* Remove underline */
+    color: #FFF;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
     font-size: 16px;
     font-weight: normal;
-    border: 1px solid #FFF; /* Border color */
-    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #FFF;
+    /* Border color */
+    border-radius: 5px;
+    /* Rounded corners */
     background-color: rgba(0, 0, 0, .3);
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
 }
 
 .outlined-button:hover {
-    background-color: #FFF; /* Background on hover */
-    color: #000; /* Text color on hover */
+    background-color: #FFF;
+    /* Background on hover */
+    color: #000;
+    /* Text color on hover */
 }
 
 
-.note {position: absolute;
+.note {
+    position: absolute;
     bottom: 10vh;
-    z-index: 3; /* Ensure it's on top of the overlay and video */
+    z-index: 3;
+    /* Ensure it's on top of the overlay and video */
     color: white;
     font-size: .8rem;
     text-align: center;
@@ -202,15 +227,16 @@ video {
 @media (max-width: 768px) {
     .foreground-text h1 {
         font-size: 2.5rem;
+        letter-spacing: 0.2em;
     }
 
-    video, .placeholder  {
+    video,
+    .placeholder {
 
-        filter: blur(1px); 
+        filter: blur(1px);
     }
 
-    .foreground-text  {
+    .foreground-text {
         font-size: 1.2rem;
     }
 }
-

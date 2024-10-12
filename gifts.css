@@ -1,52 +1,4 @@
 
-.collapsible {
-  font-family: 'Cardo', serif;
-/*    background-color: #777;*/
-/*    color: white;*/
-background:    none;
-cursor: pointer;
-padding: 10px 0;
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 1.8rem;
-font-weight: bold;
-display: flex;               /* Use flexbox to keep items on one line */
-justify-content: space-between; /* Space out the text and icon */
-align-items: center;    
-
-margin-top: 5px;
-/*    text-decoration: underline;*/
-color: black;
-}
-
-.collapsible:after {
-    content: '\002B'; /* Unicode character for "plus" sign (+) */
-/*    font-size: 13px;*/
-/*    color: white;*/
-float: right;
-margin-left: 5px;
-flex-shrink: 0;    
-
-/*    text-decoration: none !important;*/
-}
-
-.collapsible.active:after {
-    content: "\2212"; /* Unicode character for "minus" sign (−) */
-/*    text-decoration: none !important;*/
-}
-
-.content {
-    padding: 0 10px;
-    display: none;
-    overflow: hidden;
-/*    background-color: #f1f1f1;*/
-}
-
-
-
-
 
 
 div.top-section {
@@ -56,13 +8,7 @@ div.top-section {
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 1; /* Ensure this is above the pseudo-element */
-
-  /*  background-image: url('public/pattern_palms.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5; /* Set the desired opacity */
+    z-index: 1;
 
 }
 
@@ -73,23 +19,22 @@ div.top-section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./public/ocean_bg.jpg');
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8; /* Set the desired opacity */
-    z-index: -1; /* Place it behind the content */
-    pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+    background-color: #003e29;
+    /* Set the desired opacity */
+    z-index: -1;
+    /* Place it behind the content */
+    pointer-events: none;
+    /* Ensure the background doesn't interfere with clicks */
 }
 
 div.wrapper {
-    background: #FFF;
-    opacity: 0.8;
+    color: #f9e8c5;
     padding: 0 50px;
     max-width: 800px;
 
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -97,10 +42,6 @@ div.wrapper {
 div.top-section {
     height: auto;
 }
-    div.top-section::before {
-/*        opacity: 1;*/
-/*    background-image: url('./public/ocean_bg2.jpg');*/
-    }
     div.wrapper {
 /*    background: none;*/
 /*    opacity: 1;*/
