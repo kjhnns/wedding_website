@@ -35,8 +35,6 @@ h4 {
 
 
 a {
-    /* font-family: "Montserrat", sans-serif; */
-    /*    font-style: italic;*/
     color: black;
 }
 
@@ -50,10 +48,4 @@ a {
 .title h1 {
     font-size: 3rem;
     padding-top: 2rem;
-}
-
-a {
-
-    /*    text-decoration: none; /* Remove underline */
-    */
 }

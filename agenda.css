@@ -95,9 +95,6 @@ div.info-section p {
     text-align: center;
 }
 
-div.info-section a {
-    font-size: 1.4rem;
-}
 
 
 
@@ -126,10 +123,6 @@ div.info-section ul {
         font-size: 1.3rem;
         line-height: 2.5rem;
 
-    }
-
-    div.info-section a {
-        font-size: 1.15rem;
     }
 
 }
