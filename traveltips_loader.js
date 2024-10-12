@@ -178,7 +178,7 @@ The safest areas to stay in Rio de Janeiro are Ipanema and Copacabana. It's perf
 </div>
 `;
 
-var string__german = `
+    var string__german = `
 <div class='title'><h1><span id="string__traveltips__headline"></span></h1></div>
 
 <div class="info-section">
