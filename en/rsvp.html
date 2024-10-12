@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>May 10th 2025 - Camila & Johannes</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&display=swap"
-        rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&display=swap"
+		rel="stylesheet">
 
-	<link rel="stylesheet" href="../style.css" /> 
-	<link rel="stylesheet" href="../menu.css" /> 
-	<link rel="stylesheet" href="../rsvp.css" /> 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♥️</text></svg>">
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../menu.css" />
+	<link rel="stylesheet" href="../rsvp.css" />
+	<link rel="icon"
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♥️</text></svg>">
 
 
 </head>
+
 <body>
 
-<script>
-    window.language = 'en'; // Set the language parameter
-</script>
+	<script>
+		window.language = 'en'; // Set the language parameter
+	</script>
 
 	<main>
 		<div class="rsvp-section">
@@ -29,28 +32,32 @@
 
 			<div class="form-section">
 				<form id="rsvp-form">
-					
-				<div class="wrapper">
 
-			<div class='title'><h1><span id="string__rsvp__title"></span> </h1></div>
-			<div>
-				<p class="instructions"><span id="string__rsvp__instructions"></span> </p></div>
-			</div>
+					<div class="wrapper">
+
+						<div class='title'>
+							<h1><span id="string__rsvp__title"></span> </h1>
+						</div>
+						<div>
+							<p class="instructions"><span id="string__rsvp__instructions"></span> </p>
+						</div>
+					</div>
 					<div id="attendee-fields">
 						<!-- Attendee fields will be added here dynamically -->
 					</div>
 					<div id="confirmation-message">
-					<p>
-<span id="string__rsvp__confirmation"></span> 
-					</p>
-				</div>
+						<p>
+							<span id="string__rsvp__confirmation"></span>
+						</p>
+					</div>
 					<div class="form-controls">
-						<button type="button" class="button button-clear" onclick="addAttendee()"><span id="string__rsvp__addAttendee"></span> </button>
+						<button type="button" class="button button-clear" onclick="addAttendee()"><span
+								id="string__rsvp__addAttendee"></span> </button>
 						<button type="submit" class="button">
-						<span id="string__rsvp__submit"></span> </button>
+							<span id="string__rsvp__submit"></span> </button>
 					</div>
 				</form>
-				
+
 			</div>
 		</div>
 
@@ -73,35 +80,35 @@
 			};
 
 			var de_language_strings = {
-			    remove: "Entfernen",
-			    firstName: "Vorname",
-			    lastName: "Nachname",
-			    email: "E-Mail",
+				remove: "Entfernen",
+				firstName: "Vorname",
+				lastName: "Nachname",
+				email: "E-Mail",
 				phone: 'WhatsApp',
-			    eventSelect: "Veranstaltung auswählen",
-			    attendee: "Teilnehmer",
-			    notAttending: "Nimmt nicht teil",
-			    optionPreWedParty: "Vorhochzeitsfeier (09.05.2025)",
-			    optionPreWedBoat: "Vorhochzeits-Bootstour (09.05.2025)",
-			    optionWedding: "Hochzeitszeremonie (10.05.2025)",
+				eventSelect: "Veranstaltung auswählen",
+				attendee: "Teilnehmer",
+				notAttending: "Nimmt nicht teil",
+				optionPreWedParty: "Vorhochzeitsfeier (09.05.2025)",
+				optionPreWedBoat: "Vorhochzeits-Bootstour (09.05.2025)",
+				optionWedding: "Hochzeitszeremonie (10.05.2025)",
 				optionBrunch: 'Brunch (11.05.2025)',
 			};
 			var pt_br_language_strings = {
-			    remove: "Remover",
-			    firstName: "Primeiro Nome",
-			    lastName: "Sobrenome",
-			    email: "E-mail",
+				remove: "Remover",
+				firstName: "Primeiro Nome",
+				lastName: "Sobrenome",
+				email: "E-mail",
 				phone: 'WhatsApp',
-			    eventSelect: "Selecione o Evento",
-			    attendee: "Participante",
-			    notAttending: "Não comparecerei",
-			    optionPreWedParty: "Festa pré-casamento (09.05.2025)",
-			    optionPreWedBoat: "Passeio de barco (09.05.2025)",
-			    optionWedding: "Cerimônia de casamento (10.05.2025)",
+				eventSelect: "Selecione o Evento",
+				attendee: "Participante",
+				notAttending: "Não comparecerei",
+				optionPreWedParty: "Festa pré-casamento (09.05.2025)",
+				optionPreWedBoat: "Passeio de barco (09.05.2025)",
+				optionWedding: "Cerimônia de casamento (10.05.2025)",
 				optionBrunch: 'Café da manhã (11.05.2025)',
 			};
 
-			languageStrings = window.language ==='en'? en_language_strings : window.language ==='de'? de_language_strings:  pt_br_language_strings;
+			languageStrings = window.language === 'en' ? en_language_strings : window.language === 'de' ? de_language_strings : pt_br_language_strings;
 
 
 
@@ -159,24 +166,24 @@
 				</div>
 				`;
 				attendeeFields.appendChild(attendeeDiv);
-		
-		const specialCheckbox = document.getElementById('checkboxNotAttending-'+attendeeCount); 
 
-	    specialCheckbox.addEventListener('change', function() {
+				const specialCheckbox = document.getElementById('checkboxNotAttending-' + attendeeCount);
 
-	    const otherCheckboxes = document.querySelectorAll(`input[type='checkbox'].attendeeEventCheckbox-${this.dataset.attendee}:not(#checkboxNotAttending-${this.dataset.attendee})`);
+				specialCheckbox.addEventListener('change', function () {
 
-        if (this.checked) {
-            otherCheckboxes.forEach(checkbox => {
-                checkbox.disabled = true;
-                checkbox.checked = false;
-            });
-        } else {
-            otherCheckboxes.forEach(checkbox => {
-                checkbox.disabled = false;
-            });
-        }
-    });
+					const otherCheckboxes = document.querySelectorAll(`input[type='checkbox'].attendeeEventCheckbox-${this.dataset.attendee}:not(#checkboxNotAttending-${this.dataset.attendee})`);
+
+					if (this.checked) {
+						otherCheckboxes.forEach(checkbox => {
+							checkbox.disabled = true;
+							checkbox.checked = false;
+						});
+					} else {
+						otherCheckboxes.forEach(checkbox => {
+							checkbox.disabled = false;
+						});
+					}
+				});
 
 
 
@@ -196,10 +203,10 @@
 			function updateAttendeeCounters() {
 				const counters = document.querySelectorAll('.attendee-counter');
 				counters.forEach((counter, index) => {
-					counter.textContent = `Attendee ${index + 1}`;
+					counter.textContent = `${languageStrings["attendee"]} ${index + 1}`;
 				});
 
-        // Update the input names to keep them sequential
+				// Update the input names to keep them sequential
 				const inputs = document.querySelectorAll('#attendee-fields input, #attendee-fields label');
 				inputs.forEach(input => {
 					const name = input.getAttribute('name');
@@ -210,104 +217,105 @@
 				});
 			}
 
-		document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+			document.getElementById('rsvp-form').addEventListener('submit', function (event) {
+				event.preventDefault();
 
-var getSelectedEvents = function(formData, index) {
-    const selectedEvents = [];
-    const eventNames = ['event_preparty', 'event_boattour', 'event_wedding', 'event_brunch']; // Replace with actual event names
-    const eventValues = {
-    	event_wedding:'Wedding', 
-    	event_preparty: 'Pre-Wedding Party',
-    	event_boattour: 'Pre-Wedding Boat Tour',
-    	event_brunch: 'Brunch'
-    }
+				var getSelectedEvents = function (formData, index) {
+					const selectedEvents = [];
+					const eventNames = ['event_preparty', 'event_boattour', 'event_wedding', 'event_brunch']; // Replace with actual event names
+					const eventValues = {
+						event_wedding: 'Wedding',
+						event_preparty: 'Pre-Wedding Party',
+						event_boattour: 'Pre-Wedding Boat Tour',
+						event_brunch: 'Brunch'
+					}
 
-    eventNames.forEach(eventName => {
-        if (formData.get(`attendees[${index}][${eventName}]`)) {
-            selectedEvents.push(eventValues[eventName]);
-        }
-    });
+					eventNames.forEach(eventName => {
+						if (formData.get(`attendees[${index}][${eventName}]`)) {
+							selectedEvents.push(eventValues[eventName]);
+						}
+					});
 
-    return selectedEvents.length > 0 ? selectedEvents.join(', ') : 'not attending';
-}
-
-
-    const formData = new FormData(this);
-    const attendees = [];
-
-    for (let i = 0; i < attendeeCount; i++) {
-        const attendee = {
-            firstName: formData.get(`attendees[${i}][firstName]`),
-            lastName: formData.get(`attendees[${i}][lastName]`),
-            email: formData.get(`attendees[${i}][email]`),
-            phone: formData.get(`attendees[${i}][phone]`),
-            event: getSelectedEvents(formData, i),
-            date: formData.get(`attendees[${i}][date]`)
-        };
-
-        if (attendee.firstName && attendee.lastName && attendee.email && attendee.event) {
-            attendees.push(attendee);
-        }
-
-        let checkboxValidation = false;
-        const checkboxes = document.querySelectorAll(`input[type="checkbox"].attendeeEventCheckbox-${i}`);
-
-        checkboxes.forEach(checkbox => {
-	        if (checkbox.checked) {
-	            checkboxValidation = true;
-	        }
-	    })
-
-        const warningMessage = document.getElementById('selectEventLabel-'+i);
-	    if (checkboxValidation === false) {
-	        warningMessage.style.color = 'darkred';
-	        warningMessage.style.fontWeight = 'bold';
-	        return
-		}
-
-	        warningMessage.style.color = 'black';
-	        warningMessage.style.fontWeight = 'normal';
-    }
-
-    const jsonData = JSON.stringify({ attendees });
-
-    fetch('https://hook.eu1.make.com/vpg4ialld8bw9jyrp54wfnvclwdo8v2a', {
-        method: 'POST',
-        body: jsonData,
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('confirmation-message').style.display = 'block';
-        document.getElementById('rsvp-form').reset();
-        attendeeCount = 0;
-        const attendeeFields = document.getElementById('attendee-fields');
-        attendeeFields.innerHTML = '';
-        addAttendee();
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-});
+					return selectedEvents.length > 0 ? selectedEvents.join(', ') : 'not attending';
+				}
 
 
+				const formData = new FormData(this);
+				const attendees = [];
 
-    // Initial attendee added on page load
+				for (let i = 0; i < attendeeCount; i++) {
+					const attendee = {
+						firstName: formData.get(`attendees[${i}][firstName]`),
+						lastName: formData.get(`attendees[${i}][lastName]`),
+						email: formData.get(`attendees[${i}][email]`),
+						phone: formData.get(`attendees[${i}][phone]`),
+						event: getSelectedEvents(formData, i),
+						date: formData.get(`attendees[${i}][date]`)
+					};
+
+					if (attendee.firstName && attendee.lastName && attendee.email && attendee.event) {
+						attendees.push(attendee);
+					}
+
+					let checkboxValidation = false;
+					const checkboxes = document.querySelectorAll(`input[type="checkbox"].attendeeEventCheckbox-${i}`);
+
+					checkboxes.forEach(checkbox => {
+						if (checkbox.checked) {
+							checkboxValidation = true;
+						}
+					})
+
+					const warningMessage = document.getElementById('selectEventLabel-' + i);
+					if (checkboxValidation === false) {
+						warningMessage.style.color = 'darkred';
+						warningMessage.style.fontWeight = 'bold';
+						return
+					}
+
+					warningMessage.style.color = 'black';
+					warningMessage.style.fontWeight = 'normal';
+				}
+
+				const jsonData = JSON.stringify({ attendees });
+
+				fetch('https://hook.eu1.make.com/vpg4ialld8bw9jyrp54wfnvclwdo8v2a', {
+					method: 'POST',
+					body: jsonData,
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				})
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('confirmation-message').style.display = 'block';
+						document.getElementById('rsvp-form').reset();
+						attendeeCount = 0;
+						const attendeeFields = document.getElementById('attendee-fields');
+						attendeeFields.innerHTML = '';
+						addAttendee();
+					})
+					.catch(error => {
+						console.error('Error:', error);
+					});
+			});
+
+
+
+			// Initial attendee added on page load
 			addAttendee();
 		</script>
 
 
 
-          <div class="menu__section"></div>
-<script src="../loader.js"></script>
+		<div class="menu__section"></div>
+		<script src="../loader.js"></script>
 
 
 
-        </main>
+	</main>
 
 
-    </body>
-    </html>
+</body>
+
+</html>
