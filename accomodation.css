@@ -89,9 +89,7 @@ div.wrapper {
     margin-bottom: 15px;
 }
 
-.grid-item a {
-    font-size: 1.15rem;
-}
+
 
 .recommendation {
     font-size: 1rem;
@@ -106,7 +104,6 @@ div.wrapper {
 .grid-item a {
     /*    text-decoration: none;*/
     color: #000;
-    font-weight: bold;
 }
 
 .grid-item ul li {

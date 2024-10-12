@@ -107,9 +107,6 @@ div.info-section {
     flex-direction: column;
 }
 
-div.info-section a {
-    font-size: 1.4rem;
-}
 
 
 
@@ -139,9 +136,6 @@ div.info-section ul {
 
     }
 
-    div.info-section a {
-        font-size: 1.15rem;
-    }
 
 }
 
