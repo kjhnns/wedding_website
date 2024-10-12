@@ -55,8 +55,6 @@ div.wrapper {
     /* Space between the grid items */
     padding: 0 5%;
     padding-bottom: 5%;
-    /*    background-color: #f9f9f9; /* Background color of the section */
-    */
 }
 
 .grid-item {
@@ -100,11 +98,6 @@ div.wrapper {
 
 
 
-
-.grid-item a {
-    /*    text-decoration: none;*/
-    color: #000;
-}
 
 .grid-item ul li {
     text-align: left;

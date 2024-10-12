@@ -88,11 +88,7 @@ div.quote-section::before {
     background: white;
     /* Background color of the centered element */
     padding: 20px;
-    /* Adjust padding as needed */
-    /*    border-radius: 8px; /* Optional: rounded corners */
-    */
-    /*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for a nice effect */
-    */ max-width: 90%;
+    max-width: 90%;
     /* Ensure it fits within smaller viewports */
     width: 400px;
     /* Fixed width, adjust as needed */
