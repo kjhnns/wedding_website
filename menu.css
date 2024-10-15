@@ -33,7 +33,7 @@ background-color: #f9f9f9; /* Light background color */
 }
 
 /* Responsive adjustments */
-@media (max-width: 900px) {
+@media (max-width: 920px) {
 
     .menu__section {
         grid-template-columns: 1fr; /* Stack columns on smaller screens */
@@ -59,6 +59,12 @@ background-color: #f9f9f9; /* Light background color */
         align-items: start;
     }
 
+     ul.menu-list li {
+        display: flex;
+        justify-content: center;
+
+    }
+
 }
 
 
@@ -82,13 +88,4 @@ ul.menu-list li a {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-size: 20px;
-}
-
-@media (max-width: 768px) {
-
-    ul.menu-list li {
-        display: flex;
-        justify-content: center;
-
-    }
 }
