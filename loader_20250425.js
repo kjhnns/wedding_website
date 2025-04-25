@@ -1,7 +1,7 @@
 (function (language) {
 
   var english_language_strings = {
-    string__index__rsvp: 'RSVP',
+    string__index__rsvp: 'Agenda',
     string__index__date: '10 May 2025',
     string__index__place: 'Angra dos Reis, Brazil',
     string__rsvp__title: 'RSVP',
@@ -31,8 +31,7 @@
     string__agenda__wholeagenda: `<div class="day">
       <h2>Friday, 09 May 2025</h2>
       <ul>
-      <li>14:00 - 17:00: Boat tour with lunch and drinks</li>
-      <li>19:00 - 22:00: Pre-wedding party</li>
+      <li>12:00 - 18:00: Boat tour with barbecue and drinks</li>
       </ul>
       </div>
 
@@ -43,7 +42,7 @@
 
       <div class="day">
       <h2>Sunday, 11 May 2025</h2>
-      <ul><li>10:00 - 12:00: Brunch</li></ul>
+      <ul><li>09:00 - 11:00: Breakfast at <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li></ul>
       </div>`,
     string__gifts__text: `
         <p>Attending a destination wedding is a big effort and commitment, which we truly appreciate. Therefore, your presence at our celebration is more than enough.</p>
@@ -79,7 +78,7 @@
 
 
   var german_language_strings = {
-    string__index__rsvp: 'RSVP',
+    string__index__rsvp: 'Agenda',
     string__rsvp__title: 'RSVP',
     string__index__date: '10. Mai 2025',
     string__index__place: 'Angra dos Reis, Brasilien',
@@ -103,7 +102,13 @@
     string__dressCode__title: 'Dresscode',
     string__agenda__headline: 'Agenda',
     string__agenda__preliminary: '',
-    string__agenda__wholeagenda: `<div class="day"><h2>Freitag, 09. Mai 2025</h2><ul><li>14:00 - 17:00: Bootstour mit Mittagessen und Getränken</li><li>19:00 - 22:00: Pre-Wedding-Party</li></ul></div><div class="day"><h2>Samstag, 10. Mai 2025</h2><ul><li>14:00: Hochzeitszeremonie bei <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li></ul></div><div class="day"><h2>Sonntag, 11. Mai 2025</h2><ul><li>10:00 - 12:00: Brunch</li></ul></div>`,
+    string__agenda__wholeagenda: `<div class="day">
+    <h2>Freitag, 09. Mai 2025</h2><ul>
+    <li>12:00 - 18:00: Bootstour mit BBQ und Getränken</li>
+    
+    </ul></div><div class="day"><h2>Samstag, 10. Mai 2025</h2><ul><li>14:00: Hochzeitszeremonie bei <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li>
+    </ul></div>
+    <div class="day"><h2>Sonntag, 11. Mai 2025</h2><ul><li>09:00 - 11:00: Frühstück bei <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li></ul></div>`,
     string__gifts__text: `<p>Wir wissen, dass die Teilnahme an einer Hochzeit im Ausland ein großer Aufwand ist, den wir sehr zu schätzen wissen. Daher reicht eure Anwesenheit völlig aus.</p><p>Falls ihr uns trotzdem etwas schenken möchtet, würden wir uns sehr über einen Versand an unsere Adresse oder eine Überweisung freuen.</p><p>Vielen Dank, dass ihr Teil unseres besonderen Tages seid!</p>`,
     string__dressCode__text: `<div class="women"><h2>Frauen</h2><p style="text-align: justify;">Ein leichtes, knielanges Kleid ist immer eine gute Wahl. Ihr könnt mit Farben und Mustern spielen, solange es nicht weiß ist oder zu nah daran liegt. Verzichtet auf Stilettos und wählt lieber Sandalen mit Block- oder Keilabsatz, die nicht im Boden versinken.</p></div><hr/><div class="men"><h2>Männer</h2><p style="text-align: justify;">Leichte Stoffe wie Leinen und Baumwolle sind ideal. Jede Farbe ist willkommen, solange ihr euch wohlfühlt. Ein Blazer ist optional, und es ist wahrscheinlich zu warm für eine Krawatte – aber das bleibt euch überlassen. Vermeidet Jeans, Shorts, T-Shirts, Flip-Flops und Sportschuhe. Kurz gesagt: Zieht euch bequem an, aber denkt daran, dass es eine Hochzeit ist und ein gewisses Maß an Formalität erfordert.</p></div><hr/><p>Inspiration findet ihr <a href="https://www.pinterest.de/pradocmla/camila-johannes-dresscode/?invite_code=37a4234859334deea2683e6645e5028a&sender=880665039541903919">hier</a>.</p>`,
   };
@@ -111,7 +116,7 @@
 
 
   var portuguese_language_strings = {
-    string__index__rsvp: 'Confirme sua presença',
+    string__index__rsvp: 'Agenda',
     string__rsvp__title: 'Confirme sua presença',
     string__index__date: '10 de Maio de 2025',
     string__index__place: 'Angra dos Reis, Brasil',
@@ -135,7 +140,12 @@
     string__dressCode__title: 'Traje',
     string__agenda__headline: 'Agenda',
     string__agenda__preliminary: '',
-    string__agenda__wholeagenda: `<div class="day"><h2>Sexta-feira, 09 de Maio de 2025</h2><ul><li>14:00 - 17:00: Passeio de barco com almoço e bebidas</li><li>19:00 - 22:00: Festa pré-casamento</li></ul></div><div class="day"><h2>Sábado, 10 de Maio de 2025</h2><ul><li>14:00: Cerimônia de casamento na <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li></ul></div><div class="day"><h2>Domingo, 11 de Maio de 2025</h2><ul><li>10:00 - 12:00: Brunch</li></ul></div>`,
+    string__agenda__wholeagenda: `<div class="day"><h2>Sexta-feira, 09 de Maio de 2025</h2><ul>
+    <li>12:00 - 18:00: Passeio de barco com churrasco e bebidas</li>
+    </ul></div><div class="day"><h2>Sábado, 10 de Maio de 2025</h2><ul>
+    <li>14:00: Cerimônia de casamento na <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li></ul></div>
+    <div class="day"><h2>Domingo, 11 de Maio de 2025</h2><ul>
+    <li>09:00 - 11:00: Café da manhã na <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li></ul></div>`,
     string__gifts__text: `<p>Sabemos que participar de um casamento em outra cidade é um grande esforço e agradecemos de coração. A sua presença é o melhor presente que poderíamos receber.</p><p>Se mesmo assim você quiser nos presentear, fique à vontade para enviar para o nosso endereço ou, no caso de um valor monetário, transferir para uma das contas abaixo.</p><p>Obrigado por fazer parte do nosso grande dia!</p>`,
     string__dressCode__text: `<div class="women"><h2>Mulheres</h2><p style="text-align: justify;">Qualquer tecido leve com comprimento abaixo do joelho é uma boa escolha. Sinta-se à vontade para brincar com cores e estampas - desde que não sejam brancos ou tons próximos ao branco. Esqueça o salto fino e opte por sandálias com salto bloco ou anabela, que não afundem ao andar.</p></div><hr/><div class="men"><h2>Homens</h2><p style="text-align: justify;">Tecidos leves, como linho e algodão, são perfeitos. Qualquer cor é bem-vinda, desde que você se sinta confortável. O blazer é opcional, e provavelmente vai estar quente demais para uma gravata - mas fica a seu critério. Evite jeans, shorts, camisetas, chinelos e tênis esportivos. Em resumo: vista-se confortavelmente, mas não se esqueça de que é um casamento e portanto exige um certo nível de formalidade.</p></div><hr/><p>Inspire-se <a href="https://www.pinterest.de/pradocmla/camila-johannes-dresscode/?invite_code=37a4234859334deea2683e6645e5028a&sender=880665039541903919">aqui</a>.</p>`,
   };
@@ -159,7 +169,6 @@
   <li><a href="./accomodation.html">Accommodation</a></li>
   <li><a href="./dress_code.html">Dress Code</a></li>
   <li><a href="./gifts.html">Gifts</a></li>
-  <li><a href="./rsvp.html">RSVP</a></li>
   <li><a href="./travel_tips.html">Travel tips</a></li>
   </ul>
   
@@ -178,7 +187,6 @@
   <li><a href="./accomodation.html">Unterkunft</a></li>
   <li><a href="./dress_code.html">Dress Code</a></li>
   <li><a href="./gifts.html">Geschenke</a></li>
-  <li><a href="./rsvp.html">RSVP</a></li>
   <li><a href="./travel_tips.html">Reisetipps</a></li>
   </ul>
   
@@ -197,7 +205,6 @@
   <li><a href="./accomodation.html">Hospedagem</a></li>
   <li><a href="./dress_code.html">Traje</a></li>
   <li><a href="./gifts.html">Presentes</a></li>
-  <li><a href="./rsvp.html">Confirme sua presença</a></li>
   </ul>
   
   <ul class="menu-list">
