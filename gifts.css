@@ -51,7 +51,7 @@ div.top-section {
 }
 
 
-
+    
 
 div.info-section2 ul {
     margin-top:0;
@@ -93,6 +93,13 @@ div.info-section ul {
 
 
     div.info-section  {
+
+        margin: 30px 20px;
+        width: auto;
+    }
+
+
+    div.info-section2 {
 
         margin: 30px 20px;
         width: auto;
