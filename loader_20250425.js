@@ -109,7 +109,10 @@
     </ul></div><div class="day"><h2>Samstag, 10. Mai 2025</h2><ul><li>14:00: Hochzeitszeremonie bei <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li>
     </ul></div>
     <div class="day"><h2>Sonntag, 11. Mai 2025</h2><ul><li>09:00 - 11:00: Frühstück bei <a href="https://maps.app.goo.gl/MStwwKrFyG7kLo2Y9">Praia da Jaca</a></li></ul></div>`,
-    string__gifts__text: `<p>Wir wissen, dass die Teilnahme an einer Hochzeit im Ausland ein großer Aufwand ist, den wir sehr zu schätzen wissen. Daher reicht eure Anwesenheit völlig aus.</p><p>Falls ihr uns trotzdem etwas schenken möchtet, würden wir uns sehr über einen Versand an unsere Adresse oder eine Überweisung freuen.</p><p>Vielen Dank, dass ihr Teil unseres besonderen Tages seid!</p>`,
+    string__gifts__text: `
+    <p>Wir wissen, dass die Teilnahme an einer Hochzeit im Ausland ein großer Aufwand ist, den wir sehr zu schätzen wissen. Daher reicht eure Anwesenheit völlig aus.</p><p>Falls ihr uns trotzdem etwas schenken möchtet, würden wir uns sehr über einen Versand an unsere Adresse oder eine Überweisung freuen.</p><p>Vielen Dank, dass ihr Teil unseres besonderen Tages seid!</p>
+
+    `,
     string__dressCode__text: `<div class="women"><h2>Frauen</h2><p style="text-align: justify;">Ein leichtes, knielanges Kleid ist immer eine gute Wahl. Ihr könnt mit Farben und Mustern spielen, solange es nicht weiß ist oder zu nah daran liegt. Verzichtet auf Stilettos und wählt lieber Sandalen mit Block- oder Keilabsatz, die nicht im Boden versinken.</p></div><hr/><div class="men"><h2>Männer</h2><p style="text-align: justify;">Leichte Stoffe wie Leinen und Baumwolle sind ideal. Jede Farbe ist willkommen, solange ihr euch wohlfühlt. Ein Blazer ist optional, und es ist wahrscheinlich zu warm für eine Krawatte – aber das bleibt euch überlassen. Vermeidet Jeans, Shorts, T-Shirts, Flip-Flops und Sportschuhe. Kurz gesagt: Zieht euch bequem an, aber denkt daran, dass es eine Hochzeit ist und ein gewisses Maß an Formalität erfordert.</p></div><hr/><p>Inspiration findet ihr <a href="https://www.pinterest.de/pradocmla/camila-johannes-dresscode/?invite_code=37a4234859334deea2683e6645e5028a&sender=880665039541903919">hier</a>.</p>`,
   };
 
