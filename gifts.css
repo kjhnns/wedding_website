@@ -12,6 +12,19 @@ div.top-section {
 
 }
 
+p.currency__title {
+        font-family: "Bodoni Moda", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    border-bottom: 1px #f9e8c5 solid;
+    padding-bottom: 20px;
+    width: 200px;
+}
+
+
 div.top-section::before {
     content: "";
     position: absolute;
@@ -34,6 +47,14 @@ div.wrapper {
     max-width: 800px;
 
 }
+
+div.currency { 
+    display: flex
+;
+    flex-direction: column;
+
+    align-items: center;
+     }
 
 
 /* Responsive adjustments */
@@ -62,8 +83,10 @@ div.info-section2  {
 /*Width: 600px;*/
 font-size: 1.25rem;
 line-height: 1.8rem;
-display: flex;
-flex-direction: column;
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+
 margin-bottom:10%;
 }
 
@@ -100,7 +123,9 @@ div.info-section ul {
 
 
     div.info-section2 {
+        display:flex;
 
+flex-direction: column;
         margin: 30px 20px;
         width: auto;
     }
