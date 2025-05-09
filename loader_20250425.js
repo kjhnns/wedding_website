@@ -169,7 +169,7 @@
   <ul class="menu-list">
   <li><a href="./index.html">Home</a></li>
   <li><a href="./agenda.html">Agenda</a></li>
-  <li><a href="./accomodation.html">Accommodation</a></li>
+
   <li><a href="./dress_code.html">Dress Code</a></li>
   <li><a href="./gifts.html">Gifts</a></li>
   <li><a href="./travel_tips.html">Travel tips</a></li>
@@ -187,7 +187,7 @@
   <ul class="menu-list">
   <li><a href="./index.html">Startseite</a></li>
   <li><a href="./agenda.html">Programm</a></li>
-  <li><a href="./accomodation.html">Unterkunft</a></li>
+
   <li><a href="./dress_code.html">Dress Code</a></li>
   <li><a href="./gifts.html">Geschenke</a></li>
   <li><a href="./travel_tips.html">Reisetipps</a></li>
@@ -205,7 +205,7 @@
   <ul class="menu-list">
   <li><a href="./index.html">Início</a></li>
   <li><a href="./agenda.html">Agenda</a></li>
-  <li><a href="./accomodation.html">Hospedagem</a></li>
+
   <li><a href="./dress_code.html">Traje</a></li>
   <li><a href="./gifts.html">Presentes</a></li>
   </ul>
